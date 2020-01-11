@@ -9,6 +9,7 @@ body {
     margin: initial;
     line-height: 32px;
     font-family:  Arial, sans-serif;
+    text-align: start;
 }
 
 h2 {
