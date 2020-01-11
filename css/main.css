@@ -32,7 +32,7 @@ header img {
     width: 150px;
     height: auto;
     float: right;
-* {
+{
     margin: 0;
     box-sizing: border-box;
 }
@@ -40,12 +40,13 @@ header img {
 body {
     max width: 500px;
     margin: auto;
-    display: inline-block;
+    display: blockquote;
     letter-spacing: .04em;
     background-color: white;
     font-size: 16px;
     line-height: 32px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
 }
 
 a {
