@@ -21,7 +21,7 @@ h2 {
 header,
 main,
 footer {
-    background-color: bisque;
+    background-color: teal;
     margin: 1.25rem auto;
     padding: .5rem;
     max-width: 750px;
