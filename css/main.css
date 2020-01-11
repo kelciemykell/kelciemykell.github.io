@@ -24,7 +24,7 @@ footer {
     background-color: bisque;
     margin: 1.25rem auto;
     padding: .5rem;
-    max-width: 600px;
+    max-width: 750px;
     text-align: left;
 }
 
@@ -41,7 +41,7 @@ header img {
 }
 
 body {
-    max width: 500px;
+    max width: 750px;
     margin: auto;
     display: blockquote;
     letter-spacing: .04em;
