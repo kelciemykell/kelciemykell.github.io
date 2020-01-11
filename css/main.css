@@ -31,4 +31,43 @@ header img {
     width: 150px;
     height: auto;
     float: right;
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max width: 720px;
+    margin: auto;
+    display: block;
+    letter-spacing: .04em;
+    background-color: white;
+    font-size: 16px;
+    line-height: 32px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {
+    color: tomato;
+}
+h2 {
+    font-size: 1rem;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+header,
+main,
+footer {
+    background-color: seagreen;
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 600px;
+    text-align: center;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+    float: right;
 }
