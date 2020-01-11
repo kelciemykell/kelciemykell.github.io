@@ -43,7 +43,7 @@ header img {
 body {
     max width: 750px;
     margin: auto;
-    display: blockquote;
+    display: block;
     letter-spacing: .04em;
     background-color: white;
     font-size: 16px;
@@ -59,20 +59,4 @@ h2 {
     font-size: 1rem;
     text-align: center;
     border-bottom: 1px solid black;
-}
-
-header,
-main,
-footer {
-    background-color: seagreen;
-    margin: 1.25rem auto;
-    padding: .5rem;
-    max-width: 600px;
-    text-align: center;
-}
-
-header img {
-    width: 150px;
-    height: auto;
-    float: right;
 }
