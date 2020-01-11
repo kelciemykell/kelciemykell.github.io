@@ -38,9 +38,9 @@ header img {
 
 body {
     max width: 720px;
-    margin: auto;
+   
     display: block;
-    text-align: center;
+    
     letter-spacing: .04em;
     background-color: white;
     font-size: 16px;
