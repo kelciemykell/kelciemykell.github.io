@@ -24,8 +24,7 @@ footer {
 
 ul {
     list-style: none;
-    text-align: left;
-    padding: 5rem;
+    text-align: match-parent;  
 }
 
 header img {
@@ -52,6 +51,7 @@ a {
     color: tomato;
 }
 h2 {
+    font: arial lighter;
     font-size: 1rem;
     text-align: match-parent;
     border-bottom: 1px solid black;
