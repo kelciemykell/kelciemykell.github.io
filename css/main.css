@@ -24,7 +24,7 @@ footer {
 
 ul {
     list-style: none;
-    list-style-position: outside;
+    text-align: left;
 }
 
 header img {
@@ -52,6 +52,6 @@ a {
 }
 h2 {
     font-size: 1rem;
-    text-align: center;
+    text-align: match-parent;
     border-bottom: 1px solid black;
 }
