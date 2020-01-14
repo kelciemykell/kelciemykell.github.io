@@ -22,6 +22,15 @@ footer {
     text-align: center;
     font-family: 'Abel', sans-serif;
 }
+h1 {
+    font-size: 1.5rem;
+    margin: 0.15rem;
+}
+.subheading {
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow:2px 2px 5px #000;
+}
 
 ul {
     list-style: none;
@@ -32,8 +41,6 @@ ul {
 header img {
     width: 125px;
     height: auto;
-    float: right;
-    margin-top: -35px;
     box-sizing: border-box;
 }
 
@@ -44,7 +51,7 @@ body {
     letter-spacing: .04em;
     background-color: white;
     font-size: 16px;
-    line-height: 32px;
+    line-height: 1.5;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
 }
