@@ -15,13 +15,14 @@ header, nav, main, footer {
 	box-shadow: 0 0 10px #000;
 }
 header {
-	background-color: #999;
+	background-color: teal;
 	display: grid;
 	grid-template-columns: 200px 1fr;
 	padding: 7px;
 	grid-area: header;
 	justify-content:center;
 	align-items:center;
+	text-align: center;
 }
 h1 { font-size: 1rem;}
 
@@ -44,7 +45,7 @@ picture {
 	text-align:center;
 }
 footer {
-	background-color: black;
+	background-color: teal;
 	color: white;
 	padding: 7px;
 	font-size: smaller;
@@ -65,7 +66,7 @@ footer {
 	}
 	
 	header {
-	  background-color: #999;
+	  background-color: teal;
 	  display: grid;
 	  grid-template-columns: 150px 1fr;
 	  align-items: center;
