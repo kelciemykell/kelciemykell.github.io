@@ -4,12 +4,11 @@ body { font-family: Ubuntu, sans-serif; font-size: 14px; box-sizing;}
 	grid-gap: 7px;
 	max-width: 760px;
 	margin: 0 auto;
-	grid-template-columns: 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-areas:
-    "header"
-		"nav"
-		"main"
-		"footer";
+    	"header" "header" "header"
+		"main" "main" "main"
+		"footer" "footer" "footer";
 }
 header, nav, main, footer {
 	border: 1px solid #333;
