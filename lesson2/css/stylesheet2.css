@@ -11,6 +11,7 @@ header {
 border-radius: 20px;
 font-size: 2em;
 background-color: teal;
+text-align: center;
 }
 h2 {
 	color: salmon;
@@ -42,7 +43,7 @@ section:nth-child(2) {
 	box-shadow: 0 0 30px #333;
 }
 footer {
-	align-content: center;
+	text-align: center;
 	border-radius: 15px;
 	font-size: 1.5em;
 	background-color: teal;
