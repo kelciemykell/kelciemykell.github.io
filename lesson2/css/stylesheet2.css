@@ -1,6 +1,6 @@
 body {
 	font-size: 16px;
-	font-family: Monteserrat";
+	font-family: Monteserrat;
 }
 /* phone or baseline views **************************/
 main {
@@ -14,7 +14,7 @@ background-color: teal;
 text-align: center;
 }
 h2 {
-	color: salmon;
+	background-color: salmon;
 	font-size: 1.5em;
 }
 image {
