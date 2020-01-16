@@ -29,6 +29,9 @@ main {
 	font-size: 0.8rem;
 	text-align: center;
 }
+section{
+	padding: 1em;
+}
 
 main section {
 	margin: 0.5rem;
