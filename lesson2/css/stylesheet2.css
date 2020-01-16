@@ -1,83 +1,67 @@
-body { font-family: Ubuntu, sans-serif; font-size: 14px; box-sizing;}
-.gridarea {
-	display: grid;
-	grid-gap: 7px;
-	max-width: 760px;
+body {
+	font-size: 16px;
+	font-family: "Sansita", Ubuntu, sans-serif;
+}
+/* phone or baseline views **************************/
+main {
+	max-width: 767px;
 	margin: 0 auto;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-areas:
-    	"header" "header" "header"
-		"main" "main" "main"
-		"footer" "footer" "footer";
 }
-header, nav, main, footer {
-	border: 1px solid #333;
-	box-shadow: 0 0 10px #000;
+h2 {
+	color: salmon;
 }
-header {
-	background-color: teal;
-	display: grid;
-	grid-template-columns: 200px 1fr;
-	padding: 7px;
-	grid-area: header;
-	justify-content:center;
-	align-items:center;
-	text-align: center;
-}
-h1 { font-size: 1rem;}
 
-img {
-	max-width: 150px
-}
 main {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 5px;
-	padding: 5px;
-	grid-area: main;
+	grid-template-columns: 1fr;
+	font-size: 0.8rem;
 }
-section {padding:7px;}
-section p {
-	margin-left: 15px;
-}
-picture {
-	align-items:center;
-	text-align:center;
-}
-footer {
-	background-color: teal;
-	color: white;
-	padding: 7px;
-	font-size: smaller;
-	grid-area: footer;
-	text-align:center;
-}
-.himage { text-align: center; }
-.icon {width: 60px; height: auto; }
-.bimage { width: 200px; height: auto;}
 
-@media only screen and (min-width: 40em) {
-	.gridarea {
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-areas:
-    "header  header  header"
-		"nav main main"
-		"footer  footer  footer";
+main section {
+	margin: 0.5rem;
+	border: 1px solid #bbb;
+	padding: 0 1rem;
+	background-color: teal;
+}
+section:nth-child(2) {
+	display: none;
+	margin: 0.5rem;
+}
+.colimage {
+	box-shadow: 0 0 30px #333;
+}
+
+/* Tablet Views ******************************/
+@media only screen and (min-width: 37.5em) {
+	main {
+		grid-template-columns: 1fr 1fr;
 	}
-	
-	header {
-	  background-color: teal;
-	  display: grid;
-	  grid-template-columns: 150px 1fr;
-	  align-items: center;
-	  padding: 7px;
-	  grid-area: header;
-  }
-	
-	main { grid-template-columns: 1fr 1fr; }
-	
-	h1 {font-size: 2rem;}
-	.icon {width: 80px; height: auto; }
-  .bimage { width: 200px; height: auto;}
-	
+
+	section:nth-child(2) {
+		display: block;
+	}
+
+	section:nth-child(3) {
+		grid-column: span 2;
+	}
+
+	main picture {
+		display: block;
+	}
+	main section picture img {
+		width: 100%;
+		height: auto;
+		border: 1px solid #bbb;
+	}
+}
+
+/* Desktop Views ****************************/
+@media only screen and (min-width: 60em) {
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	section:nth-child(3) {
+		grid-column: span 1;
+	}
 }
