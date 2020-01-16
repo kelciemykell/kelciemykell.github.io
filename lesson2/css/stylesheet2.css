@@ -49,6 +49,9 @@ footer {
 	font-size: 1.5em;
 	background-color: peachpuff;
 }
+.thirds {
+    background-color: papayawhip;
+}
 
 /* Tablet Views ******************************/
 @media only screen and (min-width: 37.5em) {
