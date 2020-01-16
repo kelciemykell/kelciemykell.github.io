@@ -17,8 +17,8 @@ h2 {
 	background-color: salmon;
 	font-size: 1.5em;
 }
-img {
-	width: 200px;
+image {
+	max-width: 200px;
 	height: auto;
 	vertical-align: middle;
 }
