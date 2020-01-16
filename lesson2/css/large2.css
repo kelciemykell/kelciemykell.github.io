@@ -1,7 +1,8 @@
 /* Desktop Views ****************************/
 @media only screen and (min-width: 64em) {
 	main {
-		grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        display: grid;
 	}
 
 	section:nth-child(3) {
