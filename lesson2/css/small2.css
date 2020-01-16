@@ -3,10 +3,7 @@ body {
 	font-family: Monteserrat;
 }
 /* phone or baseline views **************************/
-main {
-	max-width: 767px;
-	margin: 0 auto;
-}
+
 header {
 border-radius: 20px;
 font-size: 2em;
@@ -28,6 +25,7 @@ main {
 	grid-template-columns: 1fr;
 	font-size: 0.8rem;
 	text-align: center;
+	margin: auto;
 }
 section{
 	padding: 1em;
