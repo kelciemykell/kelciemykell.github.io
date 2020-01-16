@@ -10,7 +10,7 @@ main {
 header {
 border-radius: 20px;
 font-size: 2em;
-background-color: teal;
+background-color: peachpuff;
 text-align: center;
 }
 h2 {
@@ -34,7 +34,7 @@ main section {
 	margin: 0.5rem;
 	border: 1px solid #bbb;
 	padding: 0 1rem;
-	background-color: lightcyan;
+	background-color: papayawhip;
 }
 section:nth-child(2) {
 	display: none;
@@ -47,7 +47,7 @@ footer {
 	text-align: center;
 	border-radius: 15px;
 	font-size: 1.5em;
-	background-color: teal;
+	background-color: peachpuff;
 }
 
 /* Tablet Views ******************************/
