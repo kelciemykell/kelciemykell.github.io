@@ -34,9 +34,9 @@ section{
 
 main section {
 	margin: 0.5rem;
-	border: 1px solid #bbb;
+	border: 1px solid teal;
 	padding: 0 1rem;
-	background-color: papayawhip;
+	background-color: white;
 }
 section:nth-child(2) {
 	display: none;
