@@ -1,6 +1,6 @@
 body {
 	font-size: 16px;
-	font-family: "montserrat" regular;
+	font-family: "montserrat", regular;
 }
 /* phone or baseline views **************************/
 
@@ -22,7 +22,7 @@ img {
 }
 p {
 	font-size: 1.25em;
-	font-family: "montserrat" light;
+	font-family: "montserrat", light;
 }
 
 main {
