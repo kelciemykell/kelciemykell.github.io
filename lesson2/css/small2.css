@@ -28,12 +28,6 @@ main {
 	margin: auto;
 }
 
-  /* Clear floats after the columns */
-  .row:after {
-	content: "";
-	display: table;
-	clear: both;
-  }
 section{
 	padding: 1em;
 }
