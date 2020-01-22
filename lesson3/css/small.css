@@ -1,4 +1,14 @@
 header,
+footer {
+	background-color: #bed;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+}
+
+header,
 nav,
 main,
 footer {
