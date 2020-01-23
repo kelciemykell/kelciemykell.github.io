@@ -22,7 +22,7 @@ footer {
 nav {
 	background-color: rgba(19, 196, 163, 1);;
 	text-align: center;
-	box-shadow: 0 2px 15px rgba(44, 50, 51, 1)
+	box-shadow: 0 2px 5px rgba(44, 50, 51, 1)
 }
 nav ul {
     display: flex;
