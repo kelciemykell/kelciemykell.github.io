@@ -16,7 +16,7 @@ nav,
 main,
 footer {
 	max-width: 767px;
-    margin: 0 auto;
+    margin: 1.25rem auto;
 }
 main {
     text-align: left;
