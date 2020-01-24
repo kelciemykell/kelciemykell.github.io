@@ -30,7 +30,8 @@ main,
 main {
     text-align: center;
 }
-main ul {
+main ul,
+main li {
     text-align: left;
 }
 nav {
