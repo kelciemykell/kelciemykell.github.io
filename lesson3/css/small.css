@@ -1,5 +1,6 @@
 header,
 h1,
+footer
  {
     background-color: rgba(19, 196, 163, 1);
     display: flex;
@@ -9,14 +10,6 @@ h1,
     padding: 10px;
 }
 
-footer{
-    background-color: rgba(19, 196, 163, 1);
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    padding: 10px;
-}
-}
 
 header,
 nav,
