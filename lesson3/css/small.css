@@ -36,10 +36,9 @@ nav {
 
 nav ul {
     display: flex;
-    flex-flow: column;
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: .5em;
     overflow: hidden;
     
 }
