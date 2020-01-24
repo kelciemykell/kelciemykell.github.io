@@ -25,9 +25,10 @@ main,
  {
 	max-width: 767px;
     margin: 1.25rem auto;
+    padding: 1em
 }
 main {
-    text-align: left;
+    text-align: center;
 }
 main ul {
     text-align: left;
