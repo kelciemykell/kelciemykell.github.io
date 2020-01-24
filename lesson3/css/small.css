@@ -17,7 +17,9 @@ main,
 footer {
 	max-width: 767px;
     margin: 0 auto;
-    text-align: center;
+}
+main {
+    text-align: left;
 }
 nav {
 	background-color: rgba(255, 175, 135, 1);
