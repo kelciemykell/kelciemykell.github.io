@@ -6,11 +6,24 @@
 </head>
 <body>
     <header>
-        <h1> Color Scheme</h1>  
-        <h2>RGB</h2>
+        <h1>Weather Genie</h1>
+        <img src="./logo/iconfinder_49_sun_space_planet_astronomy_weather_space_4172961 (1).png" alt="logo image">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="color-scheme.html"class="active">Color Scheme</a></li>
+            <li><a href="typography.html" class="active">Typography</a></li>
+            <li><a href="target-audience.html" class="active">Target Audience</a></li>
+        </ul>
+    </header>
+    <main>
+        <h2> Color Scheme</h2>  
+        <h3>RGB</h3>
         <li>Gainsboro: rgba(221, 224, 189, 1);</li>
         <ul>
             <li>background</li>
+            <li>nav hover</li>
         </ul>
         <li>amazonite: rgba(19, 196, 163, 1);</li>
         <ul>
@@ -23,16 +36,19 @@
         <li>macaroni and cheese: rgba(255, 175, 135, 1);</li>
         <ul>
             <li>links</li>
-            <li>some headings</li>
+            <li>nav menu</li>
         </ul>
         <li>gunmetal: rgba(44, 50, 51, 1);</li>
         <ul>
             <li>text</li>
         </ul>
-    </header>
-    <main>
     </main>
-    <footer>
-    </footer>
+        <footer>
+            &copy; <span id="currentdate"></span> | Kelcie Russell | Arizona | <a src=www.byui.edu>BYU Idaho</a>
+            <br>
+            Last Updated: <span id="lastModified"></span>
+        </footer>
+        <script src="../js/currentdate.js"></script>
+   
 </body>
 </html>
