@@ -1,11 +1,19 @@
 header,
-footer {
+] {
 	background-color: rgba(19, 196, 163, 1);
 	display: flex;
 	flex-flow: horizontal;
 	align-items: center;
 	justify-content: center;
     padding: 10px;
+}
+footer{
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 767px;
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+    font-size: 1em;
 }
 header img{
 float: right;
@@ -14,11 +22,14 @@ float: right;
 header,
 nav,
 main,
-footer {
+ {
 	max-width: 767px;
     margin: 1.25rem auto;
 }
 main {
+    text-align: left;
+}
+main ul {
     text-align: left;
 }
 nav {
