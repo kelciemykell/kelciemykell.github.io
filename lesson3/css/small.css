@@ -8,12 +8,9 @@ header,
     padding: 10px;
 }
 footer{
-    margin: 1.25rem auto;
-    padding: .5rem;
-    max-width: 767px;
     text-align: center;
-    font-family: 'Abel', sans-serif;
     font-size: 1em;
+    background-color: rgba(19, 196, 163, 1);
 }
 header img{
 float: right;
@@ -22,6 +19,7 @@ float: right;
 header,
 nav,
 main,
+footer
  {
 	max-width: 767px;
     margin: 1.25rem auto;
