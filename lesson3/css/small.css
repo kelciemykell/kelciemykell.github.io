@@ -10,7 +10,6 @@ footer
     padding: 10px;
 }
 
-
 header,
 nav,
 main,
@@ -44,6 +43,7 @@ nav ul {
 }
 
 nav li a {
+    display: block;
     color: #fff;
     text-align: center;
     padding: 0.75rem;
