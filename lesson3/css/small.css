@@ -1,6 +1,5 @@
 header,
 h1,
-footer
  {
     background-color: rgba(19, 196, 163, 1);
     display: flex;
@@ -9,8 +8,15 @@ footer
     align-items: center;
     padding: 10px;
 }
+main,
 footer {
-    border-radius: 10px;
+    
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 750px;
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+    font-size: 1em;
 }
 header,
 nav,
