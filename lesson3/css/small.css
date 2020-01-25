@@ -44,10 +44,12 @@ nav {
     align-items: center;
     padding: 10px;
 }
-
+nav li {
+    flex: 1 1 100%;
+}
 nav ul {
 
-    display:block;
+    display:flex;
     list-style: none;
     margin: 0;
     padding: .5em;
