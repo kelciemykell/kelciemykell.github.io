@@ -3,7 +3,7 @@
     float: right;
 }
 
-/*nav ul {
+nav ul {
     grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
     margin: 0;
     padding: 0;
@@ -20,22 +20,4 @@ nav li {
 nav a {
     font-size: 1rem;
 }
-*/
-nav ul{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    list-style: none;
-    text-align: center;
-}
 
-nav li {
-    flex: 1 1 100%;
-}
-
-nav li a {
-    display: block;
-    padding: 1em;
-    color: #FFF;
-    text-decoration: none;
-}
