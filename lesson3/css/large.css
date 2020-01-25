@@ -2,13 +2,4 @@
 	nav a {
 		font-size: 1.1rem;
     }
-    nav {
-        background-color: rgba(255, 175, 135, 1);
-        box-shadow: 0 2px 5px rgba(44, 50, 51, 1);
-        text-align: center;
-        display: flex;
-        flex-flow: block;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-    }
+  
