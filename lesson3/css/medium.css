@@ -1,13 +1,6 @@
 header img {
     float: right;
 }
-nav {
-    display: flex;
-    flex-flow: block;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
 nav ul { 
     display: flex;
     /* grid-template-columns: repeat(5, 1fr); */
