@@ -1,3 +1,4 @@
+@media only screen and (min-width: 5em) {
 header,
 h1,
 footer
@@ -68,3 +69,4 @@ nav li a {
 nav a:hover {
     background-color: rgba(221, 224, 189, 1);
     color: rgba(44, 50, 51, 1)
+}
