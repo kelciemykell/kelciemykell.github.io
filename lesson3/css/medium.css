@@ -3,6 +3,9 @@
 header img {
     float: right;
 }
+nav{
+    text-align: center;
+}
 nav ul { 
     display: flex;
     /* grid-template-columns: repeat(5, 1fr); */
@@ -11,4 +14,7 @@ nav ul {
 }
 nav ul li {
     flex: 1 1 100%;
+}
+nav a {
+    font-size: 1rem;
 }

@@ -36,10 +36,11 @@ main li {
 
 nav {
     text-align: center;
+    background-color: rgba(255, 175, 135, 1);
 }
 
 nav ul {
-    display: flex;
+    display: block;
     list-style-type: none;
     margin: 0;
     padding: .5em;
