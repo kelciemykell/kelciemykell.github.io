@@ -9,7 +9,9 @@ footer
     align-items: center;
     padding: 10px;
 }
-
+footer {
+    border-radius: 10px;
+}
 header,
 nav,
 main,
@@ -40,12 +42,13 @@ nav ul {
     padding: .5em;
     overflow: hidden;
     align-content: center;
+    text-align: center;
     
 }
 
 nav li a {
     display: block;
-    color: #fff;
+    color: rgba(44, 50, 51, 1);
     text-align: center;
     padding: 0.75rem;
     text-decoration: none;
