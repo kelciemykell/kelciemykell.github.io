@@ -10,10 +10,7 @@ h1,
 }
 main,
 footer {
-    
-    margin: 1.25rem auto;
     padding: .5rem;
-    max-width: 750px;
     text-align: center;
     font-family: 'Abel', sans-serif;
     font-size: 1em;
