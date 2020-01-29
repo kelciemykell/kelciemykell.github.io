@@ -48,7 +48,6 @@ nav {
     justify-content: center;
     align-items: center;
     padding: 10px;
-    font-family: Verdana, sans-serif;
 }
 
 nav button {
@@ -79,7 +78,7 @@ nav ul li.active a{ background-color: rgba(0,0,0,0.2); color: #fff;}
 
 nav ul li a:hover { rgba(0,0,0,0.4)}
 
-nav ul.hide {display: none;}
+/*nav ul.hide {display: none;}*/
 
 
 
