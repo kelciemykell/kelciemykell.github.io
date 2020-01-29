@@ -1,13 +1,13 @@
 /* 64em is also 1028px when basefont is 16px */
 @media only screen and (min-width: 64rem) {
 
-       /* nav button {display: none;}*/
+       /* nav button {display: none;}
         
-       nav ul.hide{ display:block;}
+       nav ul.hide{ display:block;}*/
         
         nav ul{
         margin-left: 2%;
-        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
         padding: 0;
         display: flex;
         list-style: none;
