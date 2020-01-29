@@ -24,6 +24,23 @@
             border-right: 1px solid rgba(0, 0, 0, .3);
             padding: .6rem 1rem;
         }
+
+        
+        
+        .navigation {
+            display: flex;
+        }
+        .navigation li {
+            display: block;
+            flex: 1 1 100%;
+        }
+        .navigation li a {
+            color: #fff;
+        }
+        
+        .navigation li:first-child {
+            display: none;
+        }
    
 
 } /*end large */

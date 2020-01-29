@@ -1,8 +1,7 @@
-const hambutton = document.querySelector(".ham");
+const hambutton = document.querySelector("navigation");
 hambutton.addEventListener("click", toggleMenu, false);
 
 function toggleMenu() {
-    console.log(document.getElementById("navigation").classList);
     document.getElementById("navigation").classList.toggle("hide");
 /*document.querySelector(".navigation").classList.toggle("responsive");*/
 }
