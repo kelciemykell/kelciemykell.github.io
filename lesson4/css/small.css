@@ -48,6 +48,7 @@ nav {
     justify-content: center;
     align-items: center;
     padding: 10px;
+    font-family: Verdana, sans-serif;
 }
 
 nav button {
@@ -58,10 +59,7 @@ nav button {
     color: #fff;
 }
 
-nav {
-    background-color: #aa0000;
-    font-family: Verdana, sans-serif;
-}
+
 
 nav ul {
     list-style-type: none;
