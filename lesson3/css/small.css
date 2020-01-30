@@ -26,6 +26,10 @@ footer
     margin: 1em auto;
     font-family: 'Roboto Condensed', sans-serif;
 }
+
+header{
+    align-items: center;
+}
 main {
     text-align: center;
 }
