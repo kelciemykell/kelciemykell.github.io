@@ -15,15 +15,12 @@ nav ul li.active a {
     background-color: #ccc;
 }
 
-
-}
-
 header,
 h1,
 footer{
     background-color: rgba(19, 196, 163, 1);
     display: flex;
-    flex-flow: block;
+    /*flex-flow: block;*/
     justify-content: center;
     align-items: center;
     padding: 10px;
