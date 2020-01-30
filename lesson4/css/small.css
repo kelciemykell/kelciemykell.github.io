@@ -45,8 +45,7 @@ header,
 nav,
 main,
 footer {
-    max-width: 767px;
-    margin: 1.25rem auto;
+    margin: 1em auto;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
