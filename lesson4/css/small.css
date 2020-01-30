@@ -38,6 +38,16 @@ footer {
     font-size: 1em;
 }
 
+footer{
+    background-color: teal;
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 750px;
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+    font-size: 1em;
+}
+
 header,
 nav,
 main,
