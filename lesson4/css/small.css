@@ -88,8 +88,6 @@ nav ul li a {
     border-top: 1px solid rgba(0, 0, 0, 0.8);
 }
 
-
-
 .navigation {
     
     list-style: none;
@@ -118,8 +116,6 @@ nav ul li a {
 .responsive li {
     display: block;
 }
-
-/*nav ul.hide {display: none;}*/
 
 
 
