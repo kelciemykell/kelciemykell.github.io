@@ -1,5 +1,5 @@
 
-header,
+/*header,
 h1,
 header img
  {
@@ -28,7 +28,7 @@ footer
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-/*footer{
+footer{
     background-color: rgba(19, 196, 163, 1);
     margin: 1.25rem auto;
     padding: .5rem;
@@ -37,6 +37,57 @@ footer
     font-family: 'Abel', sans-serif;
     font-size: 1em;
 }*/
+nav ul li.active a {
+    background-color: #ccc;
+}
+
+nav ul li a:hover {
+    rgba(0, 0, 0, 0.4)
+}
+
+header,
+h1,
+ {
+    background-color: rgba(19, 196, 163, 1);
+    display: flex;
+    flex-flow: block;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+main,
+ {
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1em;
+}
+
+footer{
+    background-color: rgba(19, 196, 163, 1);
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 750px;
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+    font-size: 1em;
+}
+
+header,
+nav,
+main,
+footer {
+    max-width: 767px;
+    margin: 1em auto;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+
+
+
+
 
 main {
     text-align: center;
