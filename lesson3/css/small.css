@@ -3,8 +3,8 @@ header,
 h1,
  {
     background-color: rgba(19, 196, 163, 1);
-    display: block
-    /*flex-flow: block;*/
+    display: flex;
+    flex-flow: block;
     justify-content: center;
     align-items: center;
     padding: 10px;
