@@ -32,7 +32,7 @@
     }
 
     nav ul li {
-        float: left;
+        float: center;
         flex: 1 1 100%;
     }
 
