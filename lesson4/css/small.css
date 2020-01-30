@@ -21,7 +21,7 @@ nav ul li a:hover {
 
 header,
 h1,
-/*footer*/ {
+footer{
     background-color: rgba(19, 196, 163, 1);
     display: flex;
     flex-flow: block;
@@ -44,7 +44,7 @@ footer {
 header,
 nav,
 main,
-/*footer*/ {
+footer {
     max-width: 767px;
     margin: 1em auto;
     font-family: 'Roboto Condensed', sans-serif;
