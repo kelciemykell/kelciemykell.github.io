@@ -91,7 +91,8 @@ nav ul li a {
 
 
 .navigation {
-	list-style: none;
+    
+    list-style: none;
 	padding: 0;
 }
 .navigation li:first-child {
