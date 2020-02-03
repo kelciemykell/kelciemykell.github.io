@@ -122,3 +122,8 @@ nav ul li a {
     display: table;
     clear: both;
 }
+
+.herodiv img {
+    width: 200px;
+    align: center;
+}
