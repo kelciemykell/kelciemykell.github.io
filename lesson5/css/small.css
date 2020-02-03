@@ -114,18 +114,10 @@ nav ul li a {
     display: block;
 }
 
-
-
-/*----- Clearfix: Force an Element not to collapse -----*/
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 .herodiv img {
     width: 100%;
     align: center;
+    float: left;
 }
 .herdiv {
     border-width: 1px;
@@ -139,3 +131,16 @@ nav ul li a {
 .contactinfo img{
     width: 50%;
 }
+
+
+
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
