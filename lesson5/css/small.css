@@ -127,8 +127,14 @@ nav ul li a {
     width: 100%;
     align: center;
 }
+.herdiv {
+    border-width: 1px;
+}
 .articlediv img {
     width: 33%;
+}
+.articlediv{
+    border-radius: 1px;
 }
 .contactinfo img{
     width: 50%;
