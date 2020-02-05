@@ -11,8 +11,8 @@ html {
     box-sizing: border-box;
 }
 
-nav ul li.active a {
-    background-color: #ccc;
+nav ul li.active {
+    color: #ccc;
 }
 
 header,
