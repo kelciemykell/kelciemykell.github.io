@@ -17,7 +17,7 @@ nav ul li.active a {
 
 header,
 h1,
-footer{
+footer {
     background-color: rgba(19, 196, 163, 1);
     display: flex;
     /*flex-flow: block;*/
@@ -86,27 +86,31 @@ nav ul li a {
 }
 
 .navigation {
-    
+
     list-style: none;
-	padding: 0;
+    padding: 0;
 }
+
 .navigation li:first-child {
-	display: block;
+    display: block;
 }
+
 .navigation li {
-	display: none;
+    display: none;
 }
+
 .navigation a {
-	display: block;
-	color: #000;
-	padding: 0.75rem;
-	text-align: left;
-	text-decoration: none;
+    display: block;
+    color: #000;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
 }
+
 .navigation a:hover {
-	color: #000;
-	background-color: #fff;
-	font-weight: 700;
+    color: #000;
+    background-color: #fff;
+    font-weight: 700;
 }
 
 
@@ -119,16 +123,20 @@ nav ul li a {
     align: center;
     float: left;
 }
+
 .herdiv {
     border-width: 1px;
 }
+
 .articlediv img {
     width: 33%;
 }
+
 .articlediv {
     border-radius: 1px;
 }
-.contactinfo img{
+
+.contactinfo img {
     width: 50%;
 }
 
@@ -143,4 +151,3 @@ nav ul li a {
     display: table;
     clear: both;
 }
-
