@@ -2,7 +2,6 @@ const hambutton = document.querySelector(".ham");
 hambutton.addEventListener("click", toggleMenu, false);
 
 function toggleMenu() {
-   /* document.getElementById("navigation").classList.toggle("hide");*/
     document.querySelector(".navigation").classList.toggle("responsive");
 }
 var day = new Date();
@@ -10,6 +9,9 @@ var today = day.getDay();
 
 if(today == 5) {
 	document.getElementById("popup").className = "show";
+}
+else {
+    document.getElementById("popup").className = "hide"
 }
 
 const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
