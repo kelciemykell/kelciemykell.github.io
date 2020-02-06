@@ -45,11 +45,11 @@
 
 /*----------------------------------------------------------article-------------------------------------------------------------*/
 .articlediv img{
-    display: inline-block;
+    display: inline-flex
     width: 25%;
 }
 .articlediv{
-    display: block;
+    display: flex;
 }
 
 }
