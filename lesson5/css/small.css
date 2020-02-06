@@ -202,15 +202,15 @@ h1, h2, p {
     background-color: rgba(13, 92, 99, 1);
     text-align: center;
     padding: 1em;
-    color: #fff;
+    color: #fff;}
 .hide {
     display: none;
 }
-    
+ 
 .show {
     display: block;
 }
-}
+
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
     content: "";
