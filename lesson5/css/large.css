@@ -46,10 +46,9 @@
 /*----------------------------------------------------------article-------------------------------------------------------------*/
 .articleclass img{
     float: right;
-    width: 25%;
     margin-top: -35px;
 }
-.articlediv{
+.articleclass{
     padding: 1em;
 }
 }
