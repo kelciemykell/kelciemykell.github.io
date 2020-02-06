@@ -16,6 +16,8 @@ nav ul li.active {
 }
 .active {
     background-color: rgba(13, 92, 99, 1);
+}
+.active a{
     color: #fff;
 }
 header,
