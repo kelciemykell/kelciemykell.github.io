@@ -53,6 +53,15 @@
 .articleclass{
     padding: 1em;
 }
+/*---------------------------------------------------contact-------------------------------------------------------------------------------------*/
+.contactclass img{
+    float: left;
+    width: 30%;
+    height: auto;
+}
+.contactclass{
+    padding: 1em;
+}
 }
 
 /*end large */
