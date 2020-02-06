@@ -192,10 +192,14 @@ h1, h2, p {
 .contactdiv {
     background-color: #bbb;
 }
-
+/*-----------------------------------------------pop up-----------------------------------------------------------------------------*/
+.hide {
+    background-color: rgba(255, 175, 135, 1);
+}
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
     content: "";
     display: table;
     clear: both;
 }
+
