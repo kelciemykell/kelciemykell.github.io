@@ -130,13 +130,11 @@ nav ul li a {
     display: block;
 }
 
-.forecastdiv {
-    display: none;
-}
+
 
 /* --------------------------------- hero section ----------------------------------------------------*/
 .herodiv img {
-    width: 75%;
+    width: 100%;
     align: center;
     float: left;
 }
