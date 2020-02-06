@@ -54,18 +54,20 @@
     padding: 1em;
 }
 /*---------------------------------------------------contact-------------------------------------------------------------------------------------*/
+.contactdiv {
+    display: flex;
+}
 .contactdiv img{
     float: left;
     width: 30%;
     height: auto;
     margin-top: -50px;
+    flex-direction: row;
 }
 .contactclass{
     padding: 1em;
 }
-.contactclass ul {
-    box-align: right;
-}
+
 }
 
 /*end large */
