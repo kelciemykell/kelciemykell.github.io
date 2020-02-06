@@ -64,6 +64,9 @@
 .contactclass{
     padding: 1em;
 }
+.contactclass ul{
+    width:60%;
+}
 
 }
 
