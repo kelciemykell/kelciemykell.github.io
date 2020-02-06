@@ -133,6 +133,9 @@ nav ul li a {
     align: center;
     float: left;
 }
+.herodiv p{
+    width: 25%;
+}
 
 .herodiv {
 	position: absolute;
@@ -143,7 +146,6 @@ nav ul li a {
 	padding: 1.5rem;
 	box-shadow: 0 0 30px #111;
     opacity: .8;
-    width: 25%;
 }
 
 .articlediv img {
