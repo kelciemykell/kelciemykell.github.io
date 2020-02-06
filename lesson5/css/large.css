@@ -108,9 +108,11 @@ td {
 
 /*----------------------------------------------------------article-------------------------------------------------------------*/
 .articleclass{
+    display: flex;
     width: 66%
 }
 .articleclass img{
+    display: flex;
     float: right;
     width: 33.3%
 }
