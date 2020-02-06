@@ -176,9 +176,15 @@ h1, h2, p {
     width: 100%;
 }
 
+.articlediv {
+    background-color: #ccc;
+}
 /*-------------------------------------------contact info--------------------------------------------------------------*/
 .contactclass img {
     width: 100%;
+}
+.contactdiv {
+    background-color: #bbb;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
