@@ -62,7 +62,7 @@
 .contactclass{
     padding: 1em;
 }
-.contactclass ul {
+.contactclass ul li {
     align: right;
 }
 }
