@@ -59,14 +59,13 @@
     float: left;
     width: 30%;
     height: auto;
+    margin-top: -100px;
     
 }
 .contactclass{
     padding: 1em;
 }
-.contactclass ul{
-    width:60%;
-}
+
 
 }
 
