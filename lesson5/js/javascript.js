@@ -10,9 +10,6 @@ var today = day.getDay();
 if(today == 5) {
 	document.getElementById("popup").className = "show";
 }
-else {
-    document.getElementById("popup").className = "hide"
-}
 
 const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 const week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
