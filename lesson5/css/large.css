@@ -62,6 +62,9 @@
 .contactclass{
     padding: 1em;
 }
+.contactclass ul {
+    align: right;
+}
 }
 
 /*end large */
