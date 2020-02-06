@@ -188,17 +188,15 @@ h1, h2, p {
     background-color: #ccc;
 }
 /*-------------------------------------------contact info--------------------------------------------------------------*/
-.mapimg {
+.contactclass img {
     width: 100%;
 }
 .contactdiv {
     background-color: #bbb;
 }
-.social{
-    width: 30px;
-    height: auto;
-}
-}
+ .contactclass ul li{
+     list-style: none;
+ }
 /*-----------------------------------------------pop up-----------------------------------------------------------------------------*/
 #popup {
     background-color: rgba(13, 92, 99, 1);
