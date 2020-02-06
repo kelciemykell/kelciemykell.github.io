@@ -43,6 +43,9 @@
     }
 
 /*------------------------5 day forecast------------------------------------------*/
+.forecastdiv{
+    position: relative;
+}
 .flex {
     margin: 10px auto;
     position: relative;
