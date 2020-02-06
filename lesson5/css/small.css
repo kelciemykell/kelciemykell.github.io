@@ -130,7 +130,7 @@ nav ul li a {
 }
 h3{
     background-color:rgba(255, 175, 135, 1);
-    
+
 }
 
 
@@ -138,7 +138,7 @@ h3{
 .herodiv img {
     width: 100%;
     align: center;
-    float: left;
+    /*float: left;*/
 }
 
 .herodiv {
