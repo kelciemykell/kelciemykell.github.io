@@ -156,7 +156,10 @@ h1, h2, p {
     opacity: .8;
 }
 /*------------------------5 day forecast------------------------------------------*/
-
+.flex {
+    margin: 10px auto;
+}
+    position: relative;
 .flex {
 	display: flex;
 	flex-direction: row;
