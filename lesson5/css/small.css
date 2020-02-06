@@ -194,8 +194,9 @@ h1, h2, p {
 }
 /*-----------------------------------------------pop up-----------------------------------------------------------------------------*/
 #popup {
-    background-color: rgba(255, 175, 135, 1);
+    background-color: rgba(13, 92, 99, 1);
     text-align: center;
+    padding: 1em;
 }
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
