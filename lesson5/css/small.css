@@ -130,7 +130,8 @@ nav ul li a {
 }
 h3{
     background-color:rgba(255, 175, 135, 1);
-
+    border-radius: 5px;
+    box-shadow: 5px #ccc;
 }
 
 
