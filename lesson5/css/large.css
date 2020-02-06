@@ -44,9 +44,8 @@
 
 
 /*----------------------------------------------------------article-------------------------------------------------------------*/
-.articlediv img{
-    display: inline-flex
-    width: 25%;
+.articleclass img{
+    float: right;
 }
 .articlediv{
     display: flex;
