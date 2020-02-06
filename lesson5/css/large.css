@@ -47,9 +47,11 @@
 .articleclass img{
     float: right;
     width: 25%;
-    margin-top: -25px;
+    margin-top: -35px;
 }
-
+.articlediv{
+    padding: 1em;
+}
 }
 
 /*end large */
