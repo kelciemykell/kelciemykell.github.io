@@ -57,7 +57,6 @@ h3{
     background-color: rgba(255, 175, 135, 1);
     border-radius: 10px;
     max-height: 2em;
-    position: relative;
 }
 main {
     text-align: center;
@@ -173,9 +172,7 @@ h1, h2, p {
     border-radius: 1px;
 }
 
-.articleclass{
-    position: relative;
-}
+
 .articleclass img{
     width: 100%;
 }
