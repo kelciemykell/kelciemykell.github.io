@@ -62,8 +62,8 @@
 .contactclass{
     padding: 1em;
 }
-.contactclass ul li {
-    float: right;
+.contactclass ul {
+    text-align: right;
 }
 }
 
