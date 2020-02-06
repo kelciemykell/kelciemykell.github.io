@@ -128,7 +128,10 @@ nav ul li a {
 .responsive li {
     display: block;
 }
-
+h3{
+    background-color:rgba(255, 175, 135, 1);
+    
+}
 
 
 /* --------------------------------- hero section ----------------------------------------------------*/
