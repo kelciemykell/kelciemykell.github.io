@@ -194,6 +194,11 @@ h1, h2, p {
 .contactdiv {
     background-color: #bbb;
 }
+.social{
+    width: 30px;
+    height: auto;
+}
+}
 /*-----------------------------------------------pop up-----------------------------------------------------------------------------*/
 #popup {
     background-color: rgba(13, 92, 99, 1);
