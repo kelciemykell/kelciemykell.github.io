@@ -136,8 +136,9 @@ nav ul li a {
 .herodiv p{
     width: 25%;
 }
-
-.herodiv {
+.herodiv {margin: 10px auto;position: relative;}
+h1, h2, p {margin: 0;}
+.herosec {
 	position: absolute;
 	top: 25px;
 	right: 50px;
