@@ -10,7 +10,7 @@ html {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-
+/*------------Main Page Elements (header, footer, nav, main)-----------------------------*/
 nav ul li.active {
     color: #ccc;
 }
@@ -130,6 +130,7 @@ nav ul li a {
     display: block;
 }
 
+/* --------------------------------- body ----------------------------------------------------*/
 .herodiv img {
     width: 75%;
     align: center;
@@ -155,6 +156,8 @@ h1, h2, p {
 	padding: 1.5rem;
 	box-shadow: 0 0 30px #111;
     opacity: .8;
+    width: 25%;
+    height: auto%
 }
 
 .articlediv img {
