@@ -47,6 +47,7 @@
 .articleclass img{
     float: right;
     width: 25%;
+    margin-top: -25px;
 }
 
 }
