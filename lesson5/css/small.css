@@ -193,8 +193,9 @@ h1, h2, p {
     background-color: #bbb;
 }
 /*-----------------------------------------------pop up-----------------------------------------------------------------------------*/
-.hide {
+#popup {
     background-color: rgba(255, 175, 135, 1);
+    text-align: center;
 }
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
