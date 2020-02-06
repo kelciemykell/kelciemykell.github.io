@@ -7,7 +7,7 @@ function toggleMenu() {
 var day = new Date();
 var today = day.getDay();
 
-if(today == 5) {
+if(today == 4) {
 	document.getElementById("popup").className = "show";
 }
 
