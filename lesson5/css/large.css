@@ -63,7 +63,7 @@
     padding: 1em;
 }
 .contactclass ul li {
-    align: right;
+    float: right;
 }
 }
 
