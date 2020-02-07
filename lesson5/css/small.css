@@ -195,6 +195,10 @@ h1, h2, p {
  .contactclass ul li{
      list-style: none;
  }
+ .contactclass p img{
+     width: 35px;
+     height: auto;
+ }
 /*-----------------------------------------------pop up-----------------------------------------------------------------------------*/
 #popup {
     background-color: rgba(13, 92, 99, 1);
