@@ -198,6 +198,10 @@ h1, h2, p {
  .contactclass p img{
      width: 35px;
      height: auto;
+     display: block;
+ }
+ .contactclassp{
+     text-align: left;
  }
 /*-----------------------------------------------pop up-----------------------------------------------------------------------------*/
 #popup {
