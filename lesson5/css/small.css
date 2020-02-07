@@ -134,7 +134,7 @@ nav ul li a {
 h3{
     background-color:rgba(13, 92, 99, 1);
     border-radius: 5px;
-    box-shadow: 5px #ccc;
+    box-shadow: 5px, #ccc;
     color: #fff;
 }
 
@@ -142,8 +142,6 @@ h3{
 /* --------------------------------- hero section ----------------------------------------------------*/
 .herodiv img {
     width: 100%;
-    align: center;
-    /*float: left;*/
 }
 
 .herodiv {
