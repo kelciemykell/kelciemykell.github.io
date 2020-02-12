@@ -145,6 +145,7 @@ h3{
 
 .herodiv {
     margin: 10px auto;position: relative;
+    text-align: left;
 }
 
 h1, h2, p {

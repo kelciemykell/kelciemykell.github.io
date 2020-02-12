@@ -39,11 +39,18 @@
     <main>
         <h2>Preston Idaho</h2>
         <div class="herodiv">
-            <img src="images/heroimg.jpg" alt="hero pic">
+            <figure class="hero">
+                <img src="images/cit230_image_franklinOriginal.jpeg" alt="hero pic"
+                srcset="images/franklinsmall614x298.jpg 1x, 
+                        images/franklinmedium1228x596.jpg 2x,
+                        images/franklinlarge2456x1192.jpg 3x">
+            </figure>
             <section class="herosec">
                 <h3> Weather Summary </h3>
                 Temperature<input type="text" id="temp">
+                <br>
                 Wind Speed <input type="text" id="windspd">
+                <br>
                 <button type="button" onclick="windChill()">Wind Chill</button>
                 <div id="outputDiv"></div>
             </section>
