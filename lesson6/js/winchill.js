@@ -1,8 +1,8 @@
 function () {
-    let s= parseInt(document.getElementById('windspd').value);
-    let t = parseInt(document.getElementById('temp').value);
+    let s= 5;
+    let t = 25;
     let factor = windChill(t, s);
-    document.getElementById('outputDiv').innerHTML =  "The Windchill is " + factor;
+    document.getElementById('outputDiv');
     }
     
     function windChill(t, s) {
