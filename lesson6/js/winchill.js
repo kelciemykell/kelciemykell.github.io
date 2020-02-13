@@ -1,15 +1,15 @@
-function () {
-    document.getElementById('s').textContent = 45;
-    document.getElementById('t').textContent = 15;
-    if {
-        s<=50 && t>=3
-    let ws = 35.74 + 0.6215 * t - 35.75 * Math.pow(s, 0.16) + 0.4275 * t * Math.pow(s, 0.16);
-    }
-    else {
-        ws= "N/A"
-    }
-    
-    function windChill(t, s) {
-    let factor = 35.74 + 0.6215 * t - 35.75 * Math.pow(s, 0.16) + 0.4275 * t * Math.pow(s, 0.16);
-    return factor;
-    }
+let t = document.getElementById('temp').innerHTML;
+let s = document.getElementById('windSpeed').innerHTML;
+
+/*Establish temperature and windseed requirements*/
+if ((t <= 50) && (s >= 3)) {
+  /*Establish variable "f" to hold value of wind chill calculation using "t" and "s" values*/
+  let f = (t*0.6215+35.74)-(35.75*Math.pow(s,.16));
+  /*If requirements are met, display "f" wind chill factor calculation to span id "windChill", rounded to integer.*/
+  document.getElementById('windChill').innerHTML = Math.round(f);
+}
+
+/*If  requirements are NOT met, display "N/A" to span id "windChill"*/
+else {
+  document.getElementById('windChill').innerHTML = 'N/A';
+};
