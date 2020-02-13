@@ -144,7 +144,8 @@ h3{
 }
 
 .herodiv {
-    margin: 10px auto;position: relative;
+    margin: 10px auto;
+    position: relative;
     text-align: left;
 }
 
@@ -153,7 +154,7 @@ h1, h2, p {
 }
 
 .herosec {
-    width: 25%;
+    width: 30%;
 	position: absolute;
 	top: 15px;
 	left: 25px;
