@@ -1,8 +1,7 @@
 function () {
-    let s= 5;
-    let t = 25;
+    document.getElementById('s').textContent = 45;
+    document.getElementById('t').textContent = 15;
     let factor = windChill(t, s);
-    document.getElementById('outputDiv');
     }
     
     function windChill(t, s) {
