@@ -154,7 +154,7 @@ h1, h2, p {
 }
 
 .herosec {
-    width: 30%;
+    width: relative;
 	position: absolute;
 	top: 15px;
 	left: 25px;
