@@ -101,13 +101,17 @@ nav ul li a {
 /*-----------------------------------------------------------------headings-------------------------------------------------------------*/
 h1{
     text-align: center;
-    background-color: #ccc;
+    background-color: rgba(19, 196, 163, 1);
 }
 /*-----------------------------------------------------------------grid-------------------------------------------------------------*/
 .grid{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows:repeat(9, 1fr);
-    grid-gap: 10px;
+    gap: 10px;
 }
 
+.grid p{
+    border-radius: 1px;
+    border-color:  rgba(19, 196, 163, 1);
+}
