@@ -99,7 +99,7 @@ nav ul li a {
     display: block;
 }
 /*-----------------------------------------------------------------headings-------------------------------------------------------------*/
-h1{
+main h1{
     text-align: center;
     background-color: rgba(19, 196, 163, 1);
 }
@@ -112,6 +112,6 @@ h1{
 }
 
 .grid p{
-    border-radius: 1px;
+    border: 1px;
     border-color:  rgba(19, 196, 163, 1);
 }
