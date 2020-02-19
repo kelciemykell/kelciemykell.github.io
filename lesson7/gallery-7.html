@@ -17,7 +17,25 @@
 </head>
 
 <body>
+    <header>
+        <h1>Weather Genie</h1>
+        <img src="../lesson3/logo/icon.png" alt="logo image">
+        <p> Your ultimate weather source</p>
+    </header>
+    <nav>
+        <ul class="navigation responsive">
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="preston-5.html" class="active">Preston, ID</a></li>
+            <li><a href="#"> Soda Springs</a></li>
+            <li><a href="#"> Fish Haven</a></li>
+            <li><a href="#"> Storm Center</a></li>
+            <li><a href="#"> Gallery</a></li>
+        </ul>
+    
+    </nav>
     <main>
+        <h1>Weather Gallery</h1>
         <section class="grid">
             <img src="images/lightning_large.jpg" alt="lightning"
                 srcset="images/lightning_small.jpg 500w, images/lightning_medium.jpg 800w, images/lightning_large.jpg 1000w">
@@ -49,11 +67,14 @@
         </section>
     </main>
 
-    <footer>
-
-
-    </footer>
-    <script src="lazyload.js"></script>
+        <footer>
+            &copy;<span id="currentdate"></span>| Kelcie Russell | Arizona | <a href="https://www.byui.edu">BYU Idaho </a>|
+            <span id="todaysDate"></span>
+        </footer>
+        <script src="../js/currentdate.js"></script>
+        <script src="../lesson6/js/javascript.js"
+        <script src="../lesson4/js/todaysDate.js"></script>
+        <script src="lazyload.js"></script>
 </body>
 
 </html>
