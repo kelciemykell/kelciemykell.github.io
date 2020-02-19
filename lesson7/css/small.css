@@ -112,6 +112,6 @@ main h1{
 }
 
 .grid p{
-    border: 1px;
+    border-width: 1px;
     border-color:  rgba(19, 196, 163, 1);
 }
