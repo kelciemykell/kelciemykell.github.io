@@ -123,3 +123,55 @@ main h1{
 }
 
 .shadow:hover {box-shadow: 0 0 50px #333;}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.grid-2 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.grid-3 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.grid-4 {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.grid-5 {
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.grid-6 {
+    grid-column: 1;
+    grid-row: 6;
+}
+
+.grid-7 {
+    grid-column: 1;
+    grid-row: 7;
+}
+
+.grid-8 {
+    grid-column: 1;
+    grid-row: 8;
+}
+
+.grid-6 {
+    grid-column: 1;
+    grid-row: 9;
+}
