@@ -113,7 +113,7 @@ main h1{
     align-items:center;
 }
 
-.grid p{
+p{
     border-width: 1px;
     border-color:  rgba(19, 196, 163, 1);
 }
