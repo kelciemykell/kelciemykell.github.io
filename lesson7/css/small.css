@@ -113,7 +113,7 @@ main h1{
     align-items:center;
 }
 
-p{
+.info{
     border-width: 2px;
     border-color:  rgba(19, 196, 163, 1);
     text-align: center;
