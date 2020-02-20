@@ -50,6 +50,7 @@
         grid-template-rows: repeat(3, 1fr);
         gap: 10px;
     }
+    .shadow:hover {box-shadow: 0 0 50px #333;}
 
     .grid-1 {
         grid-column: 1;
