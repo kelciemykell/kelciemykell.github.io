@@ -123,7 +123,7 @@ main h1{
     font-size: 1.5em;
 }
 
-
+.shadow:hover {box-shadow: none;}
 
 .grid {
     display: grid;
