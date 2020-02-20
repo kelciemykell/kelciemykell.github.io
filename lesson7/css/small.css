@@ -114,6 +114,7 @@ main h1{
 }
 
 p{
-    border-width: 1px;
+    border-width: 2px;
     border-color:  rgba(19, 196, 163, 1);
+    text-align: center;
 }
