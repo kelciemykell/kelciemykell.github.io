@@ -114,7 +114,8 @@ main h1{
 }
 
 .info{
-    border-width: 2px;
-    border-color:  rgba(19, 196, 163, 1);
     text-align: center;
+    font-size: 1.5em;
 }
+
+.shadow:hover {box-shadow: 0 0 50px #333;}
