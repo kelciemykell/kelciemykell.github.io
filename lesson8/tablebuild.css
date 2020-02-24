@@ -3,6 +3,7 @@ table{
 }
 th, td {
     text-align: center;
+    padding: 1em;
 }
 .darkerrow{
     background-color:#e7f0ed 
