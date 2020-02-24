@@ -1,27 +1,45 @@
 table{
-    justify-items: center;
+    justify-content: center;
+    font-family: Ubuntu, sans-serif;
 }
 th, td {
     text-align: center;
     padding: 1em;
 }
-.darkerrow{
-    background-color:#e7f0ed 
+table tr:nth-child(3){
+    background-color: #e7f0ed;
+    color: black; 
 }
-.lighterrow{
+table tr:nth-child(5){
+    background-color: #e7f0ed; 
+    color: black; 
+}
+table tr:nth-child(7){
+    background-color: #e7f0ed;
+    color: black;  
+}
+table tr:nth-child(4){
     background-color: #e7ffed;
-} 
-.secondhead{
+    color: black; 
+}
+table tr:nth-child(6){
+    background-color: #e7ffed;
+    color: black; 
+}table tr:nth-child(8){
+    background-color: #e7ffed;
+    color: black; 
+}
+table tr:nth-child(1){
+    background-color: #7fb9c2;
+    color: black; 
+}
+tfoot{
+    background-color: #7fb9c2;
+    color: black; 
+}
+
+
+.selected{
     background-color: #628ca6;
     color: #fff;
-}
-.mainhead{
-background-color: #7fb9c2;
-}
-.selected:nth-child(){
-    background-color: #628ca6;
-    color: #fff;
-}
-.footer{
-    background-color: #7fb9c2;  
 }
