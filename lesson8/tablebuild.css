@@ -18,7 +18,7 @@ th, td {
 .mainhead{
 background-color: #7fb9c2;
 }
-.selected{
+.selected:nth-child(){
     background-color: #628ca6;
     color: #fff;
 }
