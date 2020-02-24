@@ -1,5 +1,22 @@
 . 
 
-#e7f0ed #e7ffed (data rows) 
- #628ca6
-#7fb9c2
+.darkerrow{
+    backgorund-color:#e7f0ed 
+}
+.lighterrow{
+    background-color: #e7ffed;
+} 
+.secondhead{
+    background-color: #628ca6;
+    color: #fff;
+}
+.mainhead{
+background-color: #7fb9c2;
+}
+.selected{
+    background-color: #628ca6;
+    color: #fff;
+}
+.footer{
+    background-color: #7fb9c2;  
+}
