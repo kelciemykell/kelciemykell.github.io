@@ -37,8 +37,6 @@ table tr:nth-child(6){
 table tr:nth-child(1){
     background-color: #7fb9c2;
     color: black; 
-    font-size: 2em;
-    
 }
 tfoot{
     background-color: #7fb9c2;
