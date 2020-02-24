@@ -34,9 +34,11 @@ table tr:nth-child(6){
     background-color: #e7ffed;
     color: black; 
 }
-table tr:nth-child(1){
+thead{
     background-color: #7fb9c2;
     color: black; 
+    font-size: 1.5em;
+    font-weight: bold;
 }
 tfoot{
     background-color: #7fb9c2;
