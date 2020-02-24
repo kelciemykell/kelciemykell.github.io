@@ -1,3 +1,9 @@
+table{
+    justify-items: center;
+}
+th, td {
+    text-align: center;
+}
 .darkerrow{
     background-color:#e7f0ed 
 }
