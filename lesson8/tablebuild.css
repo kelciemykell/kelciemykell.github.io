@@ -1,6 +1,8 @@
 table{
     justify-content: center;
     font-family: Ubuntu, sans-serif;
+    box-shadow: 10px 10px 10px #628ca6;
+    
 }
 th, td {
     text-align: center;
@@ -32,6 +34,8 @@ table tr:nth-child(6){
 table tr:nth-child(1){
     background-color: #7fb9c2;
     color: black; 
+    font-size: 2em;
+    font-weight: bold;
 }
 tfoot{
     background-color: #7fb9c2;
