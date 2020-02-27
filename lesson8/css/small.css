@@ -194,7 +194,11 @@ form label.top input:required:valid {
 #ratingvalue {
     margin: 0 0 0 5px;
 }
+textarea{
+    height: 200px;
+    width: 300px;
 
+}
 .submitBtn{
     padding: 1em;
     background-color: rgba(19, 196, 163, 1);
