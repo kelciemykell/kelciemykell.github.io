@@ -41,23 +41,23 @@
             <!------------Main User Input----------->
             <fieldset>
                 <legend class="maininfo">User Information</legend>
-                <label class="top">Full Name* <br><input type="text" name="fname" size="20" pattern="[A-Za-z].{5,}"
+                <label class="top">Full Name* <br><input type="text" name="fname" size="40" pattern="[A-Za-z].{5,}"
                         required></label>
-                <label class="top">Email <br><input type="email" name="email" placeholder="someone@gmail.com"></label>
-                <label class="top">Phone* <br><input type="tel" name="phone" placeholder="1235551234" required></label>
-                <label class="top">Zip Code* <br><input type="number" name="zipcode" pattern="(\d{5}([\-]\d{4})?)" autocomplete="shipping postal-codep" required></label>
+                <label class="top">Email <br><input type="email" name="email" size="40" placeholder="someone@gmail.com"></label>
+                <label class="top">Phone* <br><input type="tel" name="phone" size="40" placeholder="1235551234" required></label>
+                <label class="top">Zip Code* <br><input type="number" name="zipcode" size="40" pattern="(\d{5}([\-]\d{4})?)" autocomplete="shipping postal-codep" required></label>
             </fieldset>
             <!----------------------Storm Info------------------------>
             <!------------Date Picker----------->
             <fieldset>
                 <legend class="storminfo" for="info">Storm Information</legend>
                 <label class="datepick" for="theDate">Storm Date:</label>
-                <input type="date" name="theDate">
+                <input type="date" name="theDate" size="40">
 
                 <!------------Storm Type(list)----------->
 
                 <label class="stormtype" for="type">Storm Type</label>
-                <input name="type" list="typelist" placeholder="Storm Type                  ▼">
+                <input name="type" size="40" list="typelist" placeholder="Storm Type                  ▼">
                 <datalist id="typelist">
                     <option value="Flash Flood"></option>
                     <option value="Hail"></option>
@@ -87,7 +87,7 @@
                 <!------------Storm Region (list)----------->
 
                 <label class="stormregion" for="region">Storm Region</label>
-                <input name="region" list="regionlist">
+                <input name="region" size="40" list="regionlist">
                 <datalist id="regionlist">
                     <option disabled selected value="Select Region▼"></option>
                     <option value="Preston"></option>
@@ -106,7 +106,7 @@
 
                 <label></label>Additional Comments/Information</label>
                 <br>
-                <input type="text" size="30" name="additionalinfo" pattern="[A-Za-z]{1,}">
+                <input type="text" size="40" name="additionalinfo" pattern="[A-Za-z]{1,}">
                 </label>
                 </fieldset>
 

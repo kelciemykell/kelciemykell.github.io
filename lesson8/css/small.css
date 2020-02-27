@@ -143,27 +143,27 @@ form legend {
  }
  form label.datepick{
     display: block;
-    padding: .5em;
+    padding: 1em;
     text-align: left; 
  }
  form label.stormtype{
     display: block;
-    padding: .5em;
+    padding: 1em;
     text-align: left; 
  }
  form label.stormregion{
     display: block;
-    padding: .5em;
+    padding: 1em;
     text-align: left; 
  }
  form label.danger{
     display: block;
-    padding: .5em;
+    padding: 1em;
     text-align: left; 
  }
  form label.dangerlabel, form label.storminfo, form label.stormtype, form label.flexly, form label.stormregion{
     display: block;
-    padding: .5em;
+    padding: 1em;
     justify-content: left;
     text-align: left;
  }
