@@ -45,7 +45,7 @@
                         required></label>
                 <label class="top">Email <br><input type="email" name="email" placeholder="someone@gmail.com"></label>
                 <label class="top">Phone* <br><input type="tel" name="phone" placeholder="1235551234" required></label>
-                <label class="top">Zip Code* <br><input type="number" name="zipcode" pattern="(\d{5}([\-]\d{4})?)" autocomplete="shipping postal-codep" required></label>></label>
+                <label class="top">Zip Code* <br><input type="number" name="zipcode" pattern="(\d{5}([\-]\d{4})?)" autocomplete="shipping postal-codep" required></label>
             </fieldset>
             <!----------------------Storm Info------------------------>
             <!------------Date Picker----------->
@@ -56,8 +56,8 @@
 
                 <!------------Storm Type(list)----------->
 
-                <label class="stormtype" for="type">Storm Type:</label>
-                <input name="type" list="typelist">
+                <label class="stormtype" for="type">Storm Type</label>
+                <input name="type" list="typelist" placeholder="Storm Type                  ▼">
                 <datalist id="typelist">
                     <option value="Flash Flood"></option>
                     <option value="Hail"></option>
@@ -86,10 +86,10 @@
 
                 <!------------Storm Region (list)----------->
 
-                <label class="stormregion" for="region">Storm Region:</label>
+                <label class="stormregion" for="region">Storm Region</label>
                 <input name="region" list="regionlist">
                 <datalist id="regionlist">
-                    <option value="Select Region" disabled></option>
+                    <option disabled selected value="Select Region                  ▼"></option>
                     <option value="Preston"></option>
                     <option value="Fish Haven"></option>
                     <option value="Soda Springs"></option>
@@ -104,12 +104,12 @@
 
                 <!------------Comments (textarea)----------->
 
-                <label>Additional Comments/Information</label>
+                <label></label>Additional Comments/Information</label>
                 <br>
-                <input type="text" size="30" name="additionalinfo" pattern="[A-Za-z]">
+                <input type="text" size="30" name="additionalinfo" pattern="[A-Za-z]{1,}">
                 </label>
                 </fieldset>
-fr5
+
                 <!------------Submit Button----------->
                 <br>
                 <input type="submit" value="Send Storm Data"" class=" submitBtn">
