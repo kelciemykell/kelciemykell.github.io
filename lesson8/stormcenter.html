@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <form method="get" action="thanks.html"></form>
+    <form method="get" action="thankyou.html"></form>
     <header>
         <h1>Weather Genie</h1>
         <img src="../lesson3/logo/icon.png" alt="logo image">
@@ -61,7 +61,7 @@
                 <!------------Storm Type(list)----------->
 
                 <label class="stormtype" for="type">Storm Type <br>
-                    <input name="type" size="40" list="typelist" placeholder="Storm Type ▼">
+                    <input name="type" size="40" list="typelist" placeholder="Storm Type">
                     <datalist id="typelist">
                         <option value="Flash Flood"></option>
                         <option value="Hail"></option>
@@ -93,14 +93,14 @@
                 <!------------Storm Region (list)----------->
 
                 <label class="stormregion" for="region">Storm Region <br>
-                    <input name="region" size="40" list="regionlist">
-                    <datalist id="regionlist">
+                    <select name="region" class="stormregion">
                         <option disabled selected>Select Region</option>
                         <option value="preston">Preston</option>
                         <option value="fish haven">Fish Haven</option>
                         <option value="soda springs">Soda Springs</option>
-                    </datalist>
+                    </select>
                 </label>
+                <br>
 
                 <!------------User In Danger (radio)----------->
 
@@ -120,7 +120,7 @@
 
             <!------------Submit Button----------->
             <br>
-            <input type="submit" value="Send Storm Data"" class=" submitBtn">
+            <input type="submit" value="Send Storm Data"" class="submitBtn">
         </form>
 
     </main>
