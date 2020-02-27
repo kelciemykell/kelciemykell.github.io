@@ -168,14 +168,9 @@ form legend {
     text-align: left;
  }
 
-
- }
-
 .flexly {
     display: flex;
     align-items: center;
-    padding: -5px;
-    
 }
 
 form label.top input:required {
@@ -187,9 +182,15 @@ form label.top input:required:valid {
 }
 
 #ratingvalue {
-    margin: 0 15px;
+    margin: 0 0 0 5px;
 }
 
+.submitBtn{
+    padding: 1em;
+    background-color: rgba(19, 196, 163, 1);
+    border-radius: 10px;
+    font-weight: bold;
+}
 
 
 
