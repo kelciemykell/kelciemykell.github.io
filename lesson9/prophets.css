@@ -7,10 +7,11 @@ main {
     display: block;
     box-shadow: darkslategray;
 }
-section{
+
+section {
     background-color: thistle;
     border-radius: 10px;
-    
+
 }
 
 h2 {
@@ -21,49 +22,50 @@ h2 {
 
 image {
     max-width: 150px;
-    
+
 }
 
 birthdate,
 birthplace,
-image {
-    display:block;
+image{
+    display: block;
     text-align: center;
     padding: .5em;
-    margin: auto;    
+    margin: auto;
 }
-.cards{
+
+.cards {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows:auto;
-    gap: 10px;
+    grid-template-rows: auto;
+    gap: 2px;
     justify-items: center;
-    align-items:center;
-    
+    align-items: center;
 }
 
 /* 35em is also 560px when basefont is 16px */
 @media only screen and (min-width: 35rem) {
-    .cards{
+    .cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows:auto;
+        grid-template-rows: auto;
         gap: 2px;
         justify-items: center;
-        align-items:center;
+        align-items: center;
         min-width: 35em;
     }
 
 }
+
 /* 64em is also 1028px when basefont is 16px */
 @media only screen and (min-width: 64rem) {
-    .cards{
+    .cards {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows:auto;
+        grid-template-rows: auto;
         gap: 2px;
         justify-items: center;
-        align-items:center;
+        align-items: center;
         min-width: 64em;
     }
 }
