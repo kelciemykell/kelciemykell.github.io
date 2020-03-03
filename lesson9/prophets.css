@@ -1,0 +1,43 @@
+main {
+    background-color: lavender;
+    max-width: 250px;
+    border: lightslategray 2px;
+    border-radius: 10px;
+    padding: .5em;
+    display: block;
+    box-shadow: darkslategray;
+}
+section{
+    background-color: thistle;
+    border-radius: 10px;
+    
+}
+
+h2 {
+    color: darkslategray;
+    text-align: center;
+    padding-top: .5em;
+}
+
+image {
+    max-width: 150px;
+    
+}
+
+birthdate,
+birthplace,
+image {
+    display: block;
+    text-align: center;
+    padding: .5em;
+    margin: auto;    
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:auto;
+    gap: 10px;
+    justify-items: center;
+    align-items:center;
+    max-width: 98.5%;
+}

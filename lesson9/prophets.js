@@ -20,10 +20,10 @@ fetch(requestURL)
       card.appendChild(h2);
       document.querySelector('div.cards').appendChild(card);
 
-      birthdate.textContent = prophets[i].birthdate;
+      birthdate.textContent = 'Date of Birth:' + ' ' + prophets[i].birthdate;
       card.appendChild(birthdate);
 
-      birthplace.textContent = prophets[i].birthplace;
+      birthplace.textContent = 'Place of Birth:' + ' ' + prophets[i].birthplace;
       card.appendChild(birthplace);
 
       image.setAttribute('src', prophets[i].imageurl);
