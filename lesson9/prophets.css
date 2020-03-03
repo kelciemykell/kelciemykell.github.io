@@ -34,24 +34,24 @@ image {
 }
 .cards{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows:auto;
     gap: 10px;
     justify-items: center;
     align-items:center;
-    max-width: 34em;
+    
 }
 
 /* 35em is also 560px when basefont is 16px */
 @media only screen and (min-width: 35rem) {
     .cards{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows:auto;
         gap: 2px;
         justify-items: center;
         align-items:center;
-        max-width: 63em;
+        min-width: 35em;
     }
 
 }
