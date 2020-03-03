@@ -14,7 +14,6 @@ fetch(requestURL)
       let h2 = document.createElement('h2');
       let birthdate = document.createElement('birthdate');
       let birthplace = document.createElement('birthplace');
-      let img = image
       let image = document.createElement('image');
       
       h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
