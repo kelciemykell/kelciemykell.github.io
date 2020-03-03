@@ -39,7 +39,7 @@ image {
     gap: 10px;
     justify-items: center;
     align-items:center;
-    min-width: 34em;
+    max-width: 34em;
 }
 
 /* 35em is also 560px when basefont is 16px */
@@ -48,7 +48,7 @@ image {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows:auto;
-        gap: 10px;
+        gap: 2px;
         justify-items: center;
         align-items:center;
         max-width: 63em;
@@ -61,7 +61,7 @@ image {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows:auto;
-        gap: 10px;
+        gap: 2px;
         justify-items: center;
         align-items:center;
         min-width: 64em;
