@@ -1,6 +1,6 @@
 main {
     background-color: lavender;
-    max-width: 250px;
+    max-width: 100%;
     border: lightslategray 2px;
     border-radius: 10px;
     padding: .5em;
@@ -39,23 +39,31 @@ image {
     gap: 10px;
     justify-items: center;
     align-items:center;
-    min-width: 64em;
+    min-width: 34em;
 }
-.cards{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows:auto;
-    gap: 10px;
-    justify-items: center;
-    align-items:center;
-    min-width: 32em;
+
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows:auto;
+        gap: 10px;
+        justify-items: center;
+        align-items:center;
+        max-width: 63em;
+    }
+
 }
-.cards{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows:auto;
-    gap: 10px;
-    justify-items: center;
-    align-items:center;
-    maz-width: 31em;
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows:auto;
+        gap: 10px;
+        justify-items: center;
+        align-items:center;
+        min-width: 64em;
+    }
 }
