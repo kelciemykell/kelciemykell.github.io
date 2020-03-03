@@ -27,12 +27,12 @@ image {
 birthdate,
 birthplace,
 image {
-    display: block;
+    display:block;
     text-align: center;
     padding: .5em;
     margin: auto;    
 }
-.grid{
+.cards{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows:auto;
