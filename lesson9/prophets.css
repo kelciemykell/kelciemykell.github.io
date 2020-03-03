@@ -39,5 +39,23 @@ image {
     gap: 10px;
     justify-items: center;
     align-items:center;
-    max-width: 98.5%;
+    min-width: 64em;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:auto;
+    gap: 10px;
+    justify-items: center;
+    align-items:center;
+    min-width: 32em;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows:auto;
+    gap: 10px;
+    justify-items: center;
+    align-items:center;
+    maz-width: 31em;
 }
