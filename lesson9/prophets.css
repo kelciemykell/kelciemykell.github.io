@@ -8,6 +8,11 @@ main {
     box-shadow: darkslategray;
 }
 
+header,
+footer{
+    text-align: center;
+}
+
 section {
     background-color: thistle;
     border-radius: 10px;
