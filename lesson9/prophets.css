@@ -46,6 +46,7 @@ img{
     grid-gap: .25rem;
     justify-items: center;
     align-items: center;
+    border: black 1px;
 }
 
 /* 35em is also 560px when basefont is 16px */
