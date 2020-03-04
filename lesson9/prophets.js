@@ -14,7 +14,7 @@ fetch(requestURL)
       let h2 = document.createElement('h2');
       let birthdate = document.createElement('birthdate');
       let birthplace = document.createElement('birthplace');
-      let image = document.createElement('image');
+      let image = document.createElement('img');
       
       h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
       card.appendChild(h2);
