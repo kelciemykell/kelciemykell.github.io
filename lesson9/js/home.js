@@ -5,40 +5,44 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    const towns = jsonObject['towns'];
     console.table(jsonObject); // temporary checking for valid response and data parsing
-    
+    const towns = jsonObject['towns'];
+
     for (let i = 0; i < towns.length; i++) {
-      
+        if(i==1 || i==4 || 1==5){
+      let h3 = document.createElement('h3';) //motto
+      let yearf = document.createElement('p'); 
+      let population = document.createElement('p')
+      let avgrain = document.createElement('p')
+      let photo = document.createElement('img');
       let card = document.createElement('section');
-      let name = document.createElement('name');
-      let motto = document.createElement('motto';)
-      let yearFounded = document.createElement('yearFounded');
-      let currentPopulation = document.createElement('currentPopulation')
-      let averageRainfall = document.createElement('averageRainfall')
-      let image = document.createElement('img');
+      let h2 = document.createElement('h2') //name
       
-      name.textContent = towns[i].name;
-      card.appendChild(name);
+      
+      h2.textContent = towns[i].name;
+      card.appendChild(h2);
       document.querySelector('div.city').appendChild(card);
 
-      motto.textContent = city[i].motto;
-      card.appendChild(motto);
+      h3.textContent = towns[i].motto;
+      card.appendChild(h3);
 
-      yearFounded.textContent = 'Year Founded:' + ' ' + towns[i].yearFounded;
-      card.appendChild(yearFounded);
+      yearf.textContent = 'Year Founded:' + ' ' + towns[i].yearFounded;
+      yearf.setAttribute('class', 'yearf');
+      card.appendChild(yearf);
 
-      currentPopulation.textContent = 'Current Population:' + ' ' + towns[i].currentPopulation;
-      card.appendChild(currentPopulation);
+      population.textContent = 'Current Population:' + ' ' + towns[i].currentPopulation;
+      population.setAttribute('class', 'population');
+      card.appendChild(population);
 
-      averageRainfall.textContent = 'Average Rainfall:' + ' ' + towns[i].averageRainfall;
-      card.appendChild(averageRainfall);
+      avgrain.textContent = 'Average Rainfall:' + ' ' + towns[i].averageRainfall;
+      avgrain.setAttribute('class', 'avgrain');
+      card.appendChild(avgrain);
 
-      image.setAttribute('src', prophets[i].imageurl);
-      card.appendChild(image);
-      image.setAttribute('alt', city[i].name + ' image' );
+      image.setAttribute('src', prophets[i].photo);
+      card.appendChild(photo);
+      photo.setAttribute('class', ' image' );
 
+}
+}
 
-    }
-
-  });
+});
