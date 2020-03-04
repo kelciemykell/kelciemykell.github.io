@@ -28,6 +28,8 @@ fetch(requestURL)
 
       image.setAttribute('src', prophets[i].imageurl);
       card.appendChild(image);
+      image.setAttribute('alt', prophets[i].name + ' ' + prophets[i].lastname + '-' + [i]);
+
 
     }
 
