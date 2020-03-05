@@ -41,7 +41,7 @@ fetch(requestURL)
                 image.setAttribute('src', 'images/' + towns[i].photo);
                 image.setAttribute('alt', towns[i].name);
                 image.setAttribute('class', 'image');
-                card.appendChild(img);
+                card.appendChild(image);
                 document.querySelector('div.city').appendChild(card);
             }
         }
