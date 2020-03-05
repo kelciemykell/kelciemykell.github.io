@@ -16,7 +16,7 @@ fetch(requestURL)
       let avgrain = document.createElement('p')
       let photo = document.createElement('img');
       let card = document.createElement('section');
-      let h2 = document.createElement('h2') //name
+      let h2 = document.createElement('h2'); //name
       
       
       h2.textContent = towns[i].name;
