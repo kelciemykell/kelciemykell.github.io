@@ -55,5 +55,9 @@
         align-items: center;
         min-width: 64em;
     }
+img .class{
+    height: 333px;
+    width: 500px;
+}
 
 }
