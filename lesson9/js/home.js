@@ -37,11 +37,11 @@ fetch(requestURL)
                 avgrain.textContent = 'Average Rainfall:' + ' ' + towns[i].averageRainfall;
                 avgrain.setAttribute('class', 'avgrain');
                 card.appendChild(avgrain);
-
-                image.setAttribute('alt', towns[i].name);
+                
                 image.setAttribute('href', 'images/' + towns[i].photo);
+                image.setAttribute('alt', towns[i].name);
                 image.setAttribute('class', 'image');
-                card.appendChild(image);
+                card.appendChild(img);
                 document.querySelector('div.city').appendChild(card);
             }
         }
