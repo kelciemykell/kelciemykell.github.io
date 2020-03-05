@@ -38,7 +38,7 @@ fetch(requestURL)
                 avgrain.setAttribute('class', 'avgrain');
                 card.appendChild(avgrain);
                 
-                image.setAttribute('href', 'images/' + towns[i].photo);
+                image.setAttribute('src', 'images/' + towns[i].photo);
                 image.setAttribute('alt', towns[i].name);
                 image.setAttribute('class', 'image');
                 card.appendChild(img);
