@@ -144,4 +144,9 @@ div{
     grid-gap: .25rem;
     justify-items: center;
     align-items: center;
+    text-decoration: center;
 }
+ h3{
+     text-align: center;
+     font-size: 1.5em;
+    }
