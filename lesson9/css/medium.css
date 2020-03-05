@@ -2,5 +2,13 @@
 @media only screen and (min-width: 35rem) {
 
 /*------------------------------------------------------------------*/  
- 
+div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 2px;
+    justify-items: center;
+    align-items: center;
+    min-width: 35em;
+} 
 }
