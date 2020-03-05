@@ -145,6 +145,9 @@ div{
     justify-items: center;
     align-items: center;
     text-align: center;
+    
+}
+div.card{
     border: 1px solid black;
 }
  h3{
