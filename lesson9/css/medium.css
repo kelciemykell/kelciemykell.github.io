@@ -10,7 +10,7 @@ div {
     align-items: center;
     min-width: 35em;
 } 
-div:nth-child(odd);{
+div:nth-child(odd) {
     flex-direction: row-reverse;
 }
 }
