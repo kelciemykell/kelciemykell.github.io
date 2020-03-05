@@ -10,7 +10,7 @@ fetch(requestURL)
 
     for (let i = 0; i < towns.length; i++) {
         if(i==1 || i==4 || 1==5){
-      let h3 = document.createElement('h3';) //motto
+      let h3 = document.createElement('h3'); //motto
       let yearf = document.createElement('p'); 
       let population = document.createElement('p')
       let avgrain = document.createElement('p')
