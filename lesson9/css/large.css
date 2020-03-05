@@ -56,8 +56,8 @@
         min-width: 64em;
     }
 img .class{
-    height: 333px;
-    width: 500px;
+    max-height: 333px;
+    max-width: 500px;
 }
 
 }
