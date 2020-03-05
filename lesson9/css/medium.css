@@ -3,12 +3,14 @@
 
 /*------------------------------------------------------------------*/  
 div {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
+    display: flex;
+    flex-direction: column;
     gap: 2px;
     justify-items: center;
     align-items: center;
     min-width: 35em;
 } 
+div:nth-child(odd);{
+    flex-direction: row-reverse;
+}
 }
