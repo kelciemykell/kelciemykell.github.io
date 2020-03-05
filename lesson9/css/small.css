@@ -151,7 +151,7 @@ div {
 
 }
 
-div.card {
+section {
     border: 1px solid black;
 }
 
@@ -167,7 +167,6 @@ p {
 ul li {
     text-decoration: none;
 }
-
 
 
 
