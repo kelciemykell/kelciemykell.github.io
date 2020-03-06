@@ -2,14 +2,19 @@
 @media only screen and (min-width: 35rem) {
 
     /*------------------------------------------------------------------*/
-    div {
-        display: grid;
-        grid-template-columns: repeat (1, 1fr);
-        grid-template-rows: auto;
-        gap: 2px;
-        justify-items: center;
-        align-items: center;
-        min-width: 35em;
+    div section{
+        grid-template-columns: 1fr 1fr;
+        padding: 0;
+        margin: .5rem;
+    }
+
+    .col-2 {
+        order: 1;
+        padding-top: 0;
+    }
+
+    .cards section:nth-child(2) .col-2 {
+        order: -1;
     }
 
 
