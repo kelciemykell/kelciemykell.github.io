@@ -125,6 +125,9 @@ h1,
 .tagline {
     font-size: 1.5em
 }
+.responsive li {
+    display: block;
+}
 
 h2 {
     background-color: rgba(19, 196, 163, 1);
