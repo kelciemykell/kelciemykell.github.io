@@ -132,6 +132,7 @@ h2 {
     padding: 1em;
     text-align: center;
     font-size: 2em;
+    margin: .5em
 }
 
 p {
@@ -166,7 +167,14 @@ p {
 
 ul li {
     text-decoration: none;
+    text-align: left;
+    justify-content: center;
 }
+
+img.image {
+    padding: 1em;
+}
+
 
 
 
