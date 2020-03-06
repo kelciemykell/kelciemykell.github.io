@@ -13,7 +13,7 @@
         padding-top: 0;
     }
 
-    .cards section:nth-child(2) .col-2 {
+    div section:nth-child(2) .col-2 {
         order: -1;
     }
 
