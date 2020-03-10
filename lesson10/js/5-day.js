@@ -36,7 +36,7 @@ fetch(apiURL)
         for (i = 0; i < mylist.length; i++) {
             var time = mylist[i].dt_txt;
             if (time.includes('21:00:00')) {
-                console.log("Found on entry with 21:00:00 in the time. it was report " + | +" from the mylist of 40");
+                console.log("Found on entry with 21:00:00 in the time. it was report " + i +" from the mylist of 40");
 
                 forecastDayNumber += 1;
                 if (forecastDayNumber === 7) {
