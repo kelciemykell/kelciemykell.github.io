@@ -1,21 +1,78 @@
-const apiURL = "//api.openweathermap.org/data/2.5/weather?id=5604473&appid=ff101de3d4d514d1df9ef8df578576ab&units=imperial";
+//const apiURL = "//api.openweathermap.org/data/2.5/weather?id=5604473&appid=ff101de3d4d514d1df9ef8df578576ab&units=imperial";
 
-const mydate = new Date();
-const y = mydate.getDay();
-console.log(y);
-const myweekday = new Array(7); 
-    myweekday[0] = "Sunday";
-    myweekday[1] = "Monday";
-    myweekday[2] = "Tuesday";
-    myweekday[3] = "Wednesday";
-    myweekday[4] = "Thursday";
-    myweekday[5] = "Friday";
-    myweekday[6] = "Saturday";
-
-
+/*current temp for overview - possibly reference weatherapi.js for this
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
-            console.log(jsObject);
-            document.getElementById('current-temp').textContent = jsObject.main.temp;
-    });
+        console.log(jsObject);
+        document.getElementById('current-temp').textContent = jsObject.main.temp;
+    });*/
+
+
+const d = new Date();
+
+const todayDayNumber = d.getDay();
+const weekday = new Array(7);
+weekday[0] = "Sunday";
+weekday[1] = "Monday";
+weekday[2] = "Tuesday";
+weekday[3] = "Wednesday";
+weekday[4] = "Thursday";
+weekday[5] = "Friday";
+weekday[6] = "Saturday";
+
+const apiURL = "//api.openweathermap.org/data/2.5/forecast?id=5604473&appid=ff101de3d4d514d1df9ef8df578576ab&units=imperial";
+
+fetch(apiURL)
+    .then((response) => response.json())
+    .then((weatherinfo) => {
+        console.log(weatherinfo);
+        document.getElementById("townName").textContent = weatherinfo.city.name;
+
+        let mylist = weatherinfo.list;
+
+        let forecastDayNumber = todayDayNumber;
+
+        for (i = 0; i < mylist.length; i++) {
+            var time = mylist[i].dt_txt;
+            if (time.includes('21:00:00')) {
+                console.log("Found on entry with 21:00:00 in the time. it was report " + | +" from the mylist of 40");
+
+                forecastDayNumber += 1;
+                if (forecastDayNumber === 7) {
+                    forecastDayNumber = 0;
+                }
+
+                let theDayName = document.createElement("span");
+                theDayNumber.textContent = weekday[forecastDayNumber];
+                //console.log(">" + weekday[forecastDayNumber]);
+
+                //temp
+                let theTemp = document.createElement("p");
+                theTemp.textContent = weatherInfo.list[i].main.temp + "\xB0";
+
+                //weather icon
+                let iconcode = weatherInfo.list[i].weather[0].icon;
+                let iconPath = "//openweathermap.oeg/img/w/" + iconcode + ".png";
+                let theIcon = document.createElement("img")
+                theIcon.src = iconPath;
+
+                //building html
+                let theDay = document.createElement("div");
+                theDay.appendChild(theDayName);
+                theDay.appendChild(theTemp);
+                theDay.appendChild(theIcon);
+
+                //attach to page
+                document.getElementById('weatherforecast').appendChild(theDay);
+
+
+            }
+        }
+    })
+
+
+
+
+
+
