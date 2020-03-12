@@ -16,7 +16,7 @@ fetch(apiURL)
     .then((response) => response.json())
     .then((weatherinfo) => {
         console.log(weatherinfo);
-        document.getElementById("townName").textContent = weatherinfo.city.name;
+        /*document.getElementById("townName").textContent = weatherinfo.city.name;
 
         let mylist = weatherinfo.list;
 
@@ -24,7 +24,7 @@ fetch(apiURL)
 
         for (i = 0; i < mylist.length; i++) {
             var time = mylist[i].dt_txt;
-            if (time.includes('21:00:00')) {
+            if (time.includes('18:00:00')) {
                 console.log("Found on entry with 21:00:00 in the time. it was report " + i +" from the mylist of 40");
 
                 forecastDayNumber += 1;
@@ -42,12 +42,12 @@ fetch(apiURL)
 
                 //weather icon
                 let iconcode = weatherInfo.list[i].weather[0].icon;
-                let iconPath = "//openweathermap.org/img/w/" + iconcode + ".png";
-                let theIcon = document.createElement("img")
+                let iconPath = "//openweathermap.org/img/w/" + /*iconcode*/jsObject.weather[0].icon + ".png";
+                /*let theIcon = document.createElement("img")
                 theIcon.src = iconPath;
 
                 //building html
-                let theDay = document.createElement("div");
+                /*let theDay = document.createElement("div");
                 theDay.appendChild(theDayName);
                 theDay.appendChild(theTemp);
                 theDay.appendChild(theIcon);
