@@ -16,6 +16,18 @@ fetch(apiURL)
     .then((response) => response.json())
     .then((weatherinfo) => {
         console.log(weatherinfo);})
+        
+        const fivedayforecast = weatherinfo.list.filter(x =>x.dt_txt.includes('18:00:00'));
+        console.log(weatherinfo);
+
+        for (let i=0; i<=fivedayforecast.length; i++){
+            document.getElementById(`forecast${i+1}`).textContent = fivedayforecast[i].main.temp;}
+        });
+        
+        
+        
+        
+        
         /*document.getElementById("townName").textContent = weatherinfo.city.name;
 
         let mylist = weatherinfo.list;
