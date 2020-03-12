@@ -1,6 +1,6 @@
-const day = new Date();
+//const day = new Date();
 
-const todayDayNumber = day.getDay();
+/*const todayDayNumber = day.getDay();
 const weekday = new Array(7);
 weekday[0] = "Sunday";
 weekday[1] = "Monday";
@@ -8,7 +8,7 @@ weekday[2] = "Tuesday";
 weekday[3] = "Wednesday";
 weekday[4] = "Thursday";
 weekday[5] = "Friday";
-weekday[6] = "Saturday";
+weekday[6] = "Saturday";*/
 
 const apiURL = "//api.openweathermap.org/data/2.5/forecast?id=5604473&appid=ff101de3d4d514d1df9ef8df578576ab&units=imperial";
 
