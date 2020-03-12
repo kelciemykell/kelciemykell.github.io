@@ -15,7 +15,7 @@ const apiURL = "//api.openweathermap.org/data/2.5/forecast?id=5604473&appid=ff10
 fetch(apiURL)
     .then((response) => response.json())
     .then((weatherinfo) => {
-        console.log(weatherinfo);}
+        console.log(weatherinfo);})
         /*document.getElementById("townName").textContent = weatherinfo.city.name;
 
         let mylist = weatherinfo.list;
