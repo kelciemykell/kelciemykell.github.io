@@ -14,11 +14,11 @@ const apiURL = "//api.openweathermap.org/data/2.5/forecast?id=5604473&appid=ff10
 
 fetch(apiURL)
     .then((response) => response.json())
-    .then((weatherinfo) => {
-        console.log(weatherinfo);})
+    .then((jsObject) => {
+        console.log(jsObject);})
         
-        const fivedayforecast = weatherinfo.list.filter(x =>x.dt_txt.includes('18:00:00'));
-        console.log(weatherinfo);
+        const fivedayforecast = jsObject.list.filter(x =>x.dt_txt.includes('18:00:00'));
+        console.log(jsObject);
 
         for (let i=0; i<=fivedayforecast.length; i++){
             document.getElementById(`forecast${i+1}`).textContent = fivedayforecast[i].main.temp;};
