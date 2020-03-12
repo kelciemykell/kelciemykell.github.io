@@ -1,6 +1,6 @@
-const d = new Date();
+const day = new Date();
 
-const todayDayNumber = d.getDay();
+const todayDayNumber = day.getDay();
 const weekday = new Array(7);
 weekday[0] = "Sunday";
 weekday[1] = "Monday";
