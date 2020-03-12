@@ -1,3 +1,14 @@
+const apiURL = "//api.openweathermap.org/data/2.5/weather?id=5604473&appid=ff101de3d4d514d1df9ef8df578576ab&units=imperial";
+
+current temp for overview - possibly reference weatherapi.js for this
+fetch(apiURL)
+    .then((response) => response.json())
+    .then((jsObject) => {
+        console.log(jsObject);
+        document.getElementById('current-temp').textContent = jsObject.main.temp;
+    })
+
+
 //const day = new Date();
 
 /*const todayDayNumber = day.getDay();
@@ -71,16 +82,6 @@ fetch(apiURL)
         }
     })
 
-
-/*const apiURL = "//api.openweathermap.org/data/2.5/weather?id=5604473&appid=ff101de3d4d514d1df9ef8df578576ab&units=imperial";
-
-current temp for overview - possibly reference weatherapi.js for this
-fetch(apiURL)
-    .then((response) => response.json())
-    .then((jsObject) => {
-        console.log(jsObject);
-        document.getElementById('current-temp').textContent = jsObject.main.temp;
-    });*/
 
 
 
