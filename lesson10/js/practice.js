@@ -77,7 +77,7 @@ fetch(apiURL1)
 			div3.appendChild(image);
 			div3.appendChild(temp);
 
-			document.querySelector('div.forecastTable').appendChild(div1);
+			document.querySelector('div.forecastdiv').appendChild(div1);
 
 		}
 	}
