@@ -34,7 +34,7 @@ fetch(apiURL1)
 			let div2 = document.createElement('div');
 			let head = document.createElement('bold');
 			let div3 = document.createElement('div');
-			let image = document.createElement('img');
+			//let image = document.createElement('img');
 			let temp = document.createElement('p');
 
            /* const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.list.weather[0].icon + '.png'; // note the concatenation
@@ -70,9 +70,9 @@ fetch(apiURL1)
 			temp.innerHTML = apiURL.main.temp.toFixed(1) + " &#8457;";
 
 			div1.appendChild(div2);
-			div2.classList.add("Day");
+			div2.classList.add("bold");
 			div2.appendChild(head);
-			div3.classList.add("DayContent");
+			div3.classList.add("data");
 			div1.appendChild(div3);
 			//div3.appendChild(image);
 			div3.appendChild(temp);
