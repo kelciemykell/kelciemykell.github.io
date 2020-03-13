@@ -1,5 +1,5 @@
 let t = document.getElementById('valCurrent').innerHTML;
-let s = document.getElementById('').innerHTML;
+let s = document.getElementById('valWind').innerHTML;
 
 /*Establish temperature and windseed requirements*/
 if ((t <= 50) && (s >= 3)) {
