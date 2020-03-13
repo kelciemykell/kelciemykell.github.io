@@ -23,6 +23,8 @@ fetch(apiURL)
     .then((jsObject) => {
         console.log(jsObject);
 
+
+        
         const fivedayforecast = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
         console.log(fivedayforecast);
 
@@ -36,7 +38,7 @@ fetch(apiURL)
         const todayDayNumber = myDate.getDay();
         console.log(todayDayNumber);
 
-        
+
         const weekday = new Array(7);
         weekday[0] = "Sunday";
         weekday[1] = "Monday";
@@ -65,11 +67,21 @@ fetch(apiURL)
                 let theTemp = document.createElement("p");
                 theTemp.textContent = weatherInfo.list[i].main.temp + "\xB0";
 
+            
                 //weather icon
-                let iconcode = weatherInfo.list[i].weather[0].icon;
+
+                const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png'; // note the concatenation
+                const desc = jsObject.weather[0].description; // note how we reference the weather array
+                document.getElementById('imagesrc').textContent = imagesrc; // informational specification only
+                document.getElementById('icon').setAttribute('src', imagesrc); // focus on the setAttribute() method
+                document.getElementById('icon').setAttribute('alt', desc);
+        
+
+
+                /*let iconcode = weatherInfo.list[i].weather[0].icon;
                 let iconPath = "//openweathermap.org/img/w/" + iconcode / jsObject.weather[0].icon + ".png";
                 let theIcon = document.createElement("img")
-                theIcon.src = iconPath;
+                theIcon.src = iconPath;*/
 
                 //building html
                 let theDay = document.createElement("div");
