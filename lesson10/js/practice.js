@@ -23,5 +23,44 @@ fetch(apiURL1)
   .then((jsObject) => {
     console.log(jsObject);
     
-document.getElementById('label').apiURL.list[0].dt_txt;
+    let mylist = weatherinfo.list;
+
+    let forecastDayNumber = todayDayNumber;
+
+    for (i = 0; i < mylist.length; i++) {
+        var time = mylist[i].dt_txt;
+        if (time.includes('18:00:00')) {
+
+            forecastDayNumber += 1;
+            if (forecastDayNumber === 7) {
+                forecastDayNumber = 0;
+            }
+
+            let theDayName = document.createElement("span");
+            theDayNumber.textContent = weekday[forecastDayNumber];
+            //console.log(">" + weekday[forecastDayNumber]);
+
+            //temp
+            let theTemp = document.createElement("p");
+            theTemp.textContent = weatherInfo.list[i].main.temp + "\xB0";
+
+            //weather icon
+            let iconcode = weatherInfo.list[i].weather[0].icon;
+            let iconPath = "//openweathermap.org/img/w/" + iconcode/jsObject.weather[0].icon + ".png";
+            let theIcon = document.createElement("img")
+            theIcon.src = iconPath;
+
+            //building html
+            let theDay = document.createElement("div");
+            theDay.appendChild(theDayName);
+            theDay.appendChild(theTemp);
+            theDay.appendChild(theIcon);
+
+            //attach to page
+            document.getElementById('weatherforecast').appendChild(theDay);
+
+
+        }
+    }
+})
   });
