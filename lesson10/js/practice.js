@@ -77,10 +77,10 @@ fetch(apiURL)
         
 
 
-                /*let iconcode = weatherInfo.list[i].weather[0].icon;
+                let iconcode = weatherInfo.list[i].weather[0].icon;
                 let iconPath = "//openweathermap.org/img/w/" + iconcode / jsObject.weather[0].icon + ".png";
-                let theIcon = document.createElement("img")
-                theIcon.src = iconPath;*/
+                let theIcon = document.createElement("img");
+                theIcon.src = iconPath;
 
                 //building html
                 let theDay = document.createElement("div");
