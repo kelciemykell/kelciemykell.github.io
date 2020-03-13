@@ -6,6 +6,9 @@
     position: relative;
     display: block;
 }
+.bold{
+	height: 20px;
+}
 .flex {
     margin: 10px auto;
     position: relative;
