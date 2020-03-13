@@ -23,5 +23,5 @@ fetch(apiURL1)
   .then((jsObject) => {
     console.log(jsObject);
     
-document.getElementById('label').apiURL.dt_txt;
+document.getElementById('label').apiURL.list[0].dt_txt;
   });
