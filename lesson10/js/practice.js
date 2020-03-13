@@ -32,25 +32,31 @@ fetch(apiURL1)
 			
 			let div1 = document.createElement('div');
 			let div2 = document.createElement('div');
-			let head = document.createElement('strong');
+			let head = document.createElement('bold');
 			let div3 = document.createElement('div');
 			let image = document.createElement('img');
 			let temp = document.createElement('p');
 
-			const imageidentifier = forecastAPI.weather[0].main;
-			if (imageidentifier == "Clear"){
+            const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png'; // note the concatenation
+            const desc = jsObject.weather[0].description; // note how we reference the weather array
+            document.getElementById('imagesrc').textContent = imagesrc; // informational specification only
+            document.getElementById('icon').setAttribute('src', imagesrc); // focus on the setAttribute() method
+            document.getElementById('icon').setAttribute('alt', desc);
+
+			//const imageidentifier = forecastAPI.weather[0].main;
+			if (imagesrc == "Clear"){
 				var imgSource = "assets/sunny.png";
 			} 
-			else if (imageidentifier == "Clouds"){
+			else if (imagesrc == "Clouds"){
 				var imgSource = "assets/cloud.png";
 			}
-			else if (imageidentifier == "Snow"){
+			else if (imagesrc == "Snow"){
 				var imgSource = "assets/snow.png";
 			}
-			else if (imageidentifier == "Rain" || imageidentifier == "Drizzle"){
+			else if (imagesrc == "Rain" || imagesrc == "Drizzle"){
 				var imgSource = "assets/rain.png";
 			}
-			else if (imageidentifier == "Thunderstorm"){
+			else if (imagesrc == "Thunderstorm"){
 				var imgSource = "assets/thunderstorm.png";
 			}
 			else {
