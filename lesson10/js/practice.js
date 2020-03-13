@@ -37,15 +37,15 @@ fetch(apiURL1)
 			let image = document.createElement('img');
 			let temp = document.createElement('p');
 
-            const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[i].icon + '.png'; // note the concatenation
+            const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.list.weather[0].icon + '.png'; // note the concatenation
             const desc = jsObject.weather[0].description; // note how we reference the weather array
             document.getElementById('imagesrc').textContent = imagesrc; // informational specification only
             document.getElementById('icon').setAttribute('src', imagesrc); // focus on the setAttribute() method
             document.getElementById('icon').setAttribute('alt', desc);
 
 			//const imageidentifier = forecastAPI.weather[0].main;
-			if (imagesrc == "Clear"){
-				var imgSource = "assets/sunny.png";
+			if (desc == "Clear"){
+				var imgsrc = ;
 			} 
 			else if (imagesrc == "Clouds"){
 				var imgSource = "assets/cloud.png";
