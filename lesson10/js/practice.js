@@ -37,18 +37,17 @@ fetch(apiURL)
         const myDate = new Date();
         const todayDayNumber = myDate.getDay();
         console.log(todayDayNumber);
-
+        let forecastDayNumber = todayDayNumber;
 
         const weekday = new Array(7);
-        weekday[0] = "Sunday";
-        weekday[1] = "Monday";
-        weekday[2] = "Tuesday";
-        weekday[3] = "Wednesday";
-        weekday[4] = "Thursday";
-        weekday[5] = "Friday";
-        weekday[6] = "Saturday";
+        weekday[0]= "Sunday";
+        weekday[1]= "Monday";
+        weekday[2]= "Tuesday";
+        weekday[3]= "Wednesday";
+        weekday[4]= "Thursday";
+        weekday[5]= "Friday";
+        weekday[6]= "Saturday";
 
-        let forecastDayNumber = todayDayNumber;
 
         for (i = 0; i < mylist.length; i++) {
             var time = mylist[i].dt_txt;
@@ -59,9 +58,9 @@ fetch(apiURL)
                     forecastDayNumber = 0;
                 }
 
-                let theDayName = document.getElementById(`bold${i+1}`);
-                theDayNumber.textContent = weekday[forecastDayNumber];
-                //console.log(">" + weekday[forecastDayNumber]);
+                let theDayName = document.createElement("span");
+                theDayName.textContent = weekday[forecastDayNumber];
+                console.log(">" + weekday[forecastDayNumber]);
 
                 //temp
                 let theTemp = document.createElement("p");

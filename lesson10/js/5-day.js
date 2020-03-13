@@ -16,17 +16,7 @@ fetch(apiURL)
   });
 
 
-//const day = new Date();
 
-/*const todayDayNumber = day.getDay();
-const weekday = new Array(7);
-weekday[0] = "Sunday";
-weekday[1] = "Monday";
-weekday[2] = "Tuesday";
-weekday[3] = "Wednesday";
-weekday[4] = "Thursday";
-weekday[5] = "Friday";
-weekday[6] = "Saturday";*/
 
 const apiURL = "//api.openweathermap.org/data/2.5/forecast?id=5604473&appid=ff101de3d4d514d1df9ef8df578576ab&units=imperial";
 
@@ -35,53 +25,55 @@ fetch(apiURL)
     .then((jsObject) => {
         console.log(jsObject);})
         
-        const fivedayforecast = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
-        console.log(fivedayforecast);
+        const dayOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 
-        for (let i=0; i<=fivedayforecast.length; i++){
-            document.getElementById(`forecast${i+1}`).textContent = fivedayforecast[i].main.temp;};
-
-        let mylist = weatherinfo.list;
-
-        let forecastDayNumber = todayDayNumber;
-
-        for (i = 0; i < mylist.length; i++) {
-            var time = mylist[i].dt_txt;
-            if (time.includes('18:00:00')) {
-
-                forecastDayNumber += 1;
-                if (forecastDayNumber === 7) {
-                    forecastDayNumber = 0;
+        for (let i = 0; i < jsObject.list.length; i++ ){
+            if (new Date(jsObject.list[i].dt_txt).getHours() == 18) {
+    
+                var forecastAPI = jsObject.list[i];
+                
+                let div1 = document.createElement('div');
+                let div2 = document.createElement('div');
+                let head = document.createElement('strong');
+                let div3 = document.createElement('div');
+                let image = document.createElement('img');
+                let temp = document.createElement('p');
+    
+                const imageidentifier = forecastAPI.weather[0].main;
+                if (imageidentifier == "Clear"){
+                    var imgSource = "assets/sunny.png";
+                } 
+                else if (imageidentifier == "Clouds"){
+                    var imgSource = "assets/cloud.png";
                 }
-
-                let theDayName = document.createElement("span");
-                theDayNumber.textContent = weekday[forecastDayNumber];
-                //console.log(">" + weekday[forecastDayNumber]);
-
-                //temp
-                let theTemp = document.createElement("p");
-                theTemp.textContent = weatherInfo.list[i].main.temp + "\xB0";
-
-                //weather icon
-                let iconcode = weatherInfo.list[i].weather[0].icon;
-                let iconPath = "//openweathermap.org/img/w/" + /*iconcode*///jsObject.weather[0].icon + ".png";
-                /*let theIcon = document.createElement("img")
-                theIcon.src = iconPath;
-
-                //building html
-                /*let theDay = document.createElement("div");
-                theDay.appendChild(theDayName);
-                theDay.appendChild(theTemp);
-                theDay.appendChild(theIcon);
-
-                //attach to page
-                document.getElementById('weatherforecast').appendChild(theDay);
-
-
+                else if (imageidentifier == "Snow"){
+                    var imgSource = "assets/snow.png";
+                }
+                else if (imageidentifier == "Rain" || imageidentifier == "Drizzle"){
+                    var imgSource = "assets/rain.png";
+                }
+                else if (imageidentifier == "Thunderstorm"){
+                    var imgSource = "assets/thunderstorm.png";
+                }
+                else {
+                    var imgSource = "assets/mist.png"
+                }
+    
+    
+                head.textContent = dayOfWeek[new Date(forecastAPI.dt_txt).getDay()];
+                image.setAttribute('src', imgSource);
+                image.setAttribute('alt', forecastAPI.weather[0].description);
+                temp.innerHTML = forecastAPI.main.temp.toFixed(1) + " &#8457;";
+    
+                div1.appendChild(div2);
+                div2.classList.add("Day");
+                div2.appendChild(head);
+                div3.classList.add("DayContent");
+                div1.appendChild(div3);
+                div3.appendChild(image);
+                div3.appendChild(temp);
+    
+                document.querySelector('div.forecastTable').appendChild(div1);
+    
             }
-        }
-    })
-
-
-
-
+        };
