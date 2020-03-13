@@ -27,7 +27,7 @@ fetch(apiURL1)
     console.log(fivedayforecast);
 
     for (let i=0; i<=fivedayforecast.length; i++){
-        document.getElementById(`forecast${i+1}`).textContent = fivedayforecast[i].main.temp;};
+        document.getElementById(`data${i+1}`).textContent = fivedayforecast[i].main.temp;};
 
     let mylist = weatherinfo.list;
 
