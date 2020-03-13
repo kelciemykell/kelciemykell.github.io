@@ -65,8 +65,8 @@ fetch(apiURL1)
 
 
 			head.textContent = dayOfWeek[new Date(apiURL.dt_txt).getDay()];
-			image.setAttribute('src', imgSource);
-			image.setAttribute('alt', apiURL.weather[0].description);
+			//image.setAttribute('src', imgSource);
+			//image.setAttribute('alt', apiURL.weather[0].description);
 			temp.innerHTML = apiURL.main.temp.toFixed(1) + " &#8457;";
 
 			div1.appendChild(div2);
@@ -74,7 +74,7 @@ fetch(apiURL1)
 			div2.appendChild(head);
 			div3.classList.add("DayContent");
 			div1.appendChild(div3);
-			div3.appendChild(image);
+			//div3.appendChild(image);
 			div3.appendChild(temp);
 
 			document.querySelector('div.forecastdiv').appendChild(div1);
