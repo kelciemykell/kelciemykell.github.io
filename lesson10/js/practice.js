@@ -37,36 +37,16 @@ fetch(apiURL1)
 			//let image = document.createElement('img');
 			let temp = document.createElement('p');
 
-           /* const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.list.weather[0].icon + '.png'; // note the concatenation
+            const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.list.weather[0].icon + '.png'; // note the concatenation
             const desc = jsObject.weather[0].description; // note how we reference the weather array
             document.getElementById('imagesrc').textContent = imagesrc; // informational specification only
             document.getElementById('icon').setAttribute('src', imagesrc); // focus on the setAttribute() method
             document.getElementById('icon').setAttribute('alt', desc);
 
-		    const imageidentifier = forecastAPI.weather[0].main;
-			if (desc == "Clear"){
-				var imgsrc = ;
-			} 
-			else if (imagesrc == "Clouds"){
-				var imgSource = "assets/cloud.png";
-			}
-			else if (imagesrc == "Snow"){
-				var imgSource = "assets/snow.png";
-			}
-			else if (imagesrc == "Rain" || imagesrc == "Drizzle"){
-				var imgSource = "assets/rain.png";
-			}
-			else if (imagesrc == "Thunderstorm"){
-				var imgSource = "assets/thunderstorm.png";
-			}
-			else {
-				var imgSource = "assets/mist.png"
-			}*/
-
 
 			head.textContent = dayOfWeek[new Date(apiURL.dt_txt).getDay()];
-			//image.setAttribute('src', imgSource);
-			//image.setAttribute('alt', apiURL.weather[0].description);
+			image.setAttribute('src', imgSource);
+			image.setAttribute('alt', apiURL.weather[0].description);
 			temp.innerHTML = apiURL.main.temp.toFixed(1) + " &#8457;";
 
 			div1.appendChild(div2);
@@ -74,7 +54,7 @@ fetch(apiURL1)
 			div2.appendChild(head);
 			div3.classList.add("data");
 			div1.appendChild(div3);
-			//div3.appendChild(image);
+			div3.appendChild(image);
 			div3.appendChild(temp);
 
 			document.querySelector('div.forecastdiv').appendChild(div1);
