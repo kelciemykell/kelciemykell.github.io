@@ -32,7 +32,11 @@ fetch(apiURL)
 
         let mylist = weatherinfo.list;
 
-        const todayDayNumber = day.getDay();
+        const myDate = new Date();
+        const todayDayNumber = myDate.getDay();
+        console.log(todayDayNumber);
+
+        
         const weekday = new Array(7);
         weekday[0] = "Sunday";
         weekday[1] = "Monday";
