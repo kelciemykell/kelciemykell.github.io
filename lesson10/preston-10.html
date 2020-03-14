@@ -17,7 +17,7 @@
 
 <body>
     <section id="popup" class="hide">
-        <p><b>SATURDAY:</b> Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
+        <p><b>SATURDAY:</b> Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
     </section>
     <header>
         <h1>Weather Genie</h1>
@@ -34,28 +34,34 @@
             <li><a href="../lesson8/stormcenter.html"> Storm Center</a></li>
             <li><a href="../lesson7/gallery-7.html"> Gallery</a></li>
         </ul>
-    
+
     </nav>
     <main>
         <h2>Preston Idaho</h2>
         <div class="herodiv">
             <figure class="hero">
                 <img src="images/cit230_image_franklinOriginal.jpeg" alt="hero pic"
-                srcset="images/franklinsmall614x298.jpg 500w, images/franklinmedium1128x596.jpg 800w, images/franklinlarge2456x1192.jpg 1000w">
+                    srcset="images/franklinsmall614x298.jpg 500w, images/franklinmedium1128x596.jpg 800w, images/franklinlarge2456x1192.jpg 1000w">
             </figure>
             <section class="herosec">
                 <h3> Weather Summary </h3>
                 <span class="row1">Currently: </span><span class="row1-1" id="valCurrent"></span><br>
-                <span class="row1">High: </span><div class="row1-1"><span id="valHigh"></span> &#8457;</div>
-                <span class="row1">Wind Chill: </span><div class="row1-1"><span id="windChill"></span> &#8457;</div>
-                <span class="row1">Humidity: </span><div class="row1-1"><span id="valHumid"></span>%</div>
-                <span class="row1">Wind Speed: </span><div class="row1-1"><span id="valWind"></span>mph</div>
+                <span class="row1">High: </span>
+                <div class="row1-1"><span id="valHigh"></span> &#8457;</div>
+                <span class="row1">Wind Chill: </span>
+                <div class="row1-1"><span id="windChill"></span> &#8457;</div>
+                <span class="row1">Humidity: </span>
+                <div class="row1-1"><span id="valHumid"></span>%</div>
+                <span class="row1">Wind Speed: </span>
+                <div class="row1-1"><span id="valWind"></span>mph</div>
             </section>
         </div>
-        <div class="forecastdiv">
+        <section>
             <h3>5 Day Forecast </h3>
+            <div class="forecastDiv">
+        </section>
 
-            <span id="forecast"></span>
+        <!-- <span id="forecast"></span>
             <section class="forecastclass">
 
                 <div class="flex">
@@ -86,13 +92,13 @@
                     </div>
                 </div>
             </section>
-        </div>
+        </div> -->
         <div class="articlediv">
             <h3>Article</h3>
             <h4> By Author</h4>
             <section class="articleclass">
                 <img src="images/rainplaceholder.jpg" alt="placeholder"
-                srcset="images/rainplaceholdersmall.jpg 500w, images/rainplaceholdermedium.jpg 800w, images/rainplaceholder.jpg 1000w">
+                    srcset="images/rainplaceholdersmall.jpg 500w, images/rainplaceholdermedium.jpg 800w, images/rainplaceholder.jpg 1000w">
                 <article>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur veniam reiciendis
                     necessitatibus
@@ -110,14 +116,13 @@
         <div class="contactdiv">
             <h3> Contact Information</h3>
             <section class="contactclass">
-                <img src="images/map.jpg" alt="map"
-                srcset="images/mapsmall.jpg 500w, images/map.jpg 800w">
-                    <p>Weather Genie</p>
-                    <p>&#9993;: hello@weathergenie.com</p>
-                    <p>☏: 123-456-7890</p>
-                    <p><a href="https://www.instagram.com" target="_blank">Intagram</a></p>
-                    <p><a href="https://www.facebook.com" target="_blank">Facebook</a></p>
-                    <p><a href="https://www.twitter.com" target="_blank">Twitter</a></p>
+                <img src="images/map.jpg" alt="map" srcset="images/mapsmall.jpg 500w, images/map.jpg 800w">
+                <p>Weather Genie</p>
+                <p>&#9993;: hello@weathergenie.com</p>
+                <p>☏: 123-456-7890</p>
+                <p><a href="https://www.instagram.com" target="_blank">Intagram</a></p>
+                <p><a href="https://www.facebook.com" target="_blank">Facebook</a></p>
+                <p><a href="https://www.twitter.com" target="_blank">Twitter</a></p>
             </section>
         </div>
     </main>
@@ -131,6 +136,7 @@
     <script src="../lesson4/js/todaysDate.js"></script>
     <script src="js/windchill.js"></script>
     <script src="js/practice.js"></script>
+    <script src = "js/5-day.js"></script>
 </body>
 
 </html>
