@@ -1,7 +1,7 @@
 //------------current weather data
 const apiURL1 = "//api.openweathermap.org/data/2.5/weather?id=5604473&appid=ff101de3d4d514d1df9ef8df578576ab&units=imperial";
 
-fetch(apiURL)
+fetch(apiURL1)
   .then((response) => response.json())
   .then((jsObject) => {
 	console.log(jsObject);
@@ -50,7 +50,7 @@ fetch(apiURL)
         
     
     
-                head.textContent = dayOfWeek[new Date(apiURL.dt_txt).getDay()];
+                head.textContent = dayOfWeek[new Date(forecastAPI.dt_txt).getDay()];
                 image.setAttribute('src', imgSource);
                 image.setAttribute('alt', forecastAPI.weather[0].description);
                 temp.innerHTML = forecastAPI.main.temp.toFixed(1) + " &#8457;";
