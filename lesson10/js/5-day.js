@@ -66,4 +66,4 @@ fetch(apiURL)
                 document.querySelector('div.forecastDiv').appendChild(div1);
     
             }
-        };
+        });
