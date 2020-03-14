@@ -23,7 +23,7 @@ const apiURL = "//api.openweathermap.org/data/2.5/forecast?id=5604473&appid=ff10
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);})
+        console.log(jsObject);
         
         const dayOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 
