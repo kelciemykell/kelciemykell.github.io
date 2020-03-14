@@ -51,7 +51,7 @@ fetch(apiURL)
     
     
                 head.textContent = dayOfWeek[new Date(fiveDayForecast.dt_txt).getDay()];
-                image.setAttribute('src', imgSource);
+                image.setAttribute('src', imgsrc);
                 image.setAttribute('alt', forecastAPI.weather[0].description);
                 temp.innerHTML = forecastAPI.main.temp.toFixed(1) + " &#8457;";
     
