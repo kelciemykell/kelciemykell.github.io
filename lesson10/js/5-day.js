@@ -1,5 +1,5 @@
 //------------current weather data
-const apiURL1 = "//api.openweathermap.org/data/2.5/weather?id=5604473&appid=ff101de3d4d514d1df9ef8df578576ab&units=imperial";
+/*const apiURL1 = "//api.openweathermap.org/data/2.5/weather?id=5604473&appid=ff101de3d4d514d1df9ef8df578576ab&units=imperial";
 
 fetch(apiURL1)
     .then((response) => response.json())
@@ -13,56 +13,61 @@ fetch(apiURL1)
         document.getElementById('valHumid').textContent = weatherAPI.main.humidity;
         document.getElementById('valWind').textContent = weatherAPI.wind.speed;
 
-    });
+    });*/
 
 
 
-
-const apiURL = "//api.openweathermap.org/data/2.5/forecast?id=5604473&appid=ff101de3d4d514d1df9ef8df578576ab&units=imperial";
-
-const currentDay = new Date().getDay();
-const weekday = [];
-weekday[0] = "Sun";
-weekday[1] = "Mon";
-weekday[2] = "Tue";
-weekday[3] = "Wed";
-weekday[4] = "Thu";
-weekday[5] = "Fri";
-weekday[6] = "Sat";
-
-let count = currentDay;
-
-
-fetch(apiURL)
-    .then((response) => response.json())
-    .then((jsObject) => {
-        console.log(jsObject);
-        const forecast = jsObject.list;
-
-        for (let i = 0; i < jsObject.list; i++) {
-            if (forecast[i].dt_txt.includes("18:00:00")) {
-                if (count == 7) {
-                    count = 0;
+    function weatherSummary() {
+        const apiURL = "//api.openweathermap.org/data/2.5/forecast?id=5604473&appid=ff101de3d4d514d1df9ef8df578576ab&units=imperial";
+        fetch(apiURL)
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (jsObject) {
+                const api = jsObject.list[0];
+                document.getElementById('current').textContent = api.weather[0].main;
+                document.getElementById('temperature').textContent = api.main.temp_max.toFixed(0);
+                document.getElementById('humidity').textContent = api.main.humidity;
+                document.getElementById('windSpeed').textContent = api.wind.speed.toFixed(0);
+    
+                const currentDay = new Date().getDay();
+                const weekday= [];
+                weekday[0] = "Sun";
+                weekday[1] = "Mon";
+                weekday[2] = "Tue";
+                weekday[3] = "Wed";
+                weekday[4] = "Thu";
+                weekday[5] = "Fri";
+                weekday[6] = "Sat";
+    
+                let count = currentDay;
+                const forecast = jsObject.list;
+                for (let i = 0; i < forecast.length; i++) {
+                    if (forecast[i].dt_txt.includes("18:00:00")) {
+                        if(count == 7){
+                            count = 0;
+                        }
+                        let h4 = document.createElement('h4');
+                        let div = document.createElement('div');
+                        let image = document.createElement('img');
+                        let p = document.createElement('p');
+    
+                        h4.textContent = weekday[count];
+                        div.appendChild(h4);
+    
+                        let icon = forecast[i].weather[0].icon;
+                        image.setAttribute('src', 'https://openweathermap.org/img/w/' + icon + '.png');
+                        image.setAttribute('alt', forecast[i].weather[0].description);
+                        div.appendChild(image);
+    
+                        p.textContent = forecast[i].main.temp.toFixed(0)+' F';
+                        div.appendChild(p);
+    
+                        document.querySelector('forecastDiv').appendChild(div);
+                        count++;
+                    }
                 }
-                let h4 = document.createElement('h4');
-                let div = document.createElement('div');
-                let image = document.createElement('img');
-                let p = document.createElement('p');
-
-                h4.textContent = weekday[count];
-                div.appendChild(h4);
-
-                let icon = forecast[i].weather[0].icon;
-                image.setAttribute('src', 'https://openweathermap.org/img/w/' + icon + '.png');
-                image.setAttribute('alt', forecast[i].weather[0].description);
-                div.appendChild(image);
-
-                p.textContent = forecast[i].main.temp.toFixed(0) + ' F'
-                div.appendChild(p);
-
-                document.querySelector('div.forecastDiv').appendChild(div);
-                count++;
-
-            }
-        }
-    });
+    
+            });
+    }
+    
