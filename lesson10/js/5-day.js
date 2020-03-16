@@ -1,5 +1,5 @@
 //------------current weather data
-/*const apiURL1 = "//api.openweathermap.org/data/2.5/weather?id=5604473&appid=ff101de3d4d514d1df9ef8df578576ab&units=imperial";
+const apiURL1 = "//api.openweathermap.org/data/2.5/weather?id=5604473&appid=ff101de3d4d514d1df9ef8df578576ab&units=imperial";
 
 fetch(apiURL1)
     .then((response) => response.json())
@@ -13,7 +13,7 @@ fetch(apiURL1)
         document.getElementById('valHumid').textContent = weatherAPI.main.humidity;
         document.getElementById('valWind').textContent = weatherAPI.wind.speed;
 
-    });*/
+    });
 
 
 
@@ -23,13 +23,7 @@ fetch(apiURL1)
             .then(function (response) {
                 return response.json();
             })
-            .then(function (jsObject) {
-                const api = jsObject.list[0];
-                document.getElementById('current').textContent = api.weather[0].main;
-                document.getElementById('temperature').textContent = api.main.temp_max.toFixed(0);
-                document.getElementById('humidity').textContent = api.main.humidity;
-                document.getElementById('windSpeed').textContent = api.wind.speed.toFixed(0);
-    
+
                 const currentDay = new Date().getDay();
                 const weekday= [];
                 weekday[0] = "Sun";
@@ -63,7 +57,7 @@ fetch(apiURL1)
                         p.textContent = forecast[i].main.temp.toFixed(0)+' F';
                         div.appendChild(p);
     
-                        document.querySelector('forecastDiv').appendChild(div);
+                        document.querySelector('div.forecastDiv').appendChild(div);
                         count++;
                     }
                 }
