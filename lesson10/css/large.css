@@ -42,6 +42,27 @@
         padding: .6rem 1rem;
     }
 
+/*-------------------forecast--------------------*/
+
+    .forecastDiv{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        padding: 15px;
+        text-align: center;
+        background-color: #f1f9f9;
+    }
+
+    .forecastDiv div{
+        padding-top: 5px;
+    }
+
+    .forecastDiv h3 {
+        padding: 5px;
+        grid-column: 1/6;
+        background-color: white;
+    }
+
 
 /*----------------------------------------------------------article-------------------------------------------------------------*/
 .articleclass img{
