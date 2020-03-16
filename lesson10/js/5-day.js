@@ -31,12 +31,13 @@ weekday[5] = "Fri";
 weekday[6] = "Sat";
 
 let count = currentDay;
-const forecast = jsObject.list;
+
 
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
         console.log(jsObject);
+        const forecast = jsObject.list;
 
         for (let i = 0; i < jsObject.list; i++) {
             if (forecast[i].dt_txt.includes("18:00:00")) {
@@ -56,13 +57,12 @@ fetch(apiURL)
                 image.setAttribute('alt', forecast[i].weather[0].description);
                 div.appendChild(image);
 
-                p.textContent = forecast[i].main.temp.toFixed(0)+' F'
+                p.textContent = forecast[i].main.temp.toFixed(0) + ' F'
                 div.appendChild(p);
 
                 document.querySelector('div.forecastDiv').appendChild(div);
                 count++;
-                    
-                }
+
             }
-        });
-    
+        }
+    });
