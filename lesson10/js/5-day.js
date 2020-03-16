@@ -1,5 +1,5 @@
 //------------current weather data
-const apiURL1 = "//api.openweathermap.org/data/2.5/weather?id=5604473&appid=ff101de3d4d514d1df9ef8df578576ab&units=imperial";
+const apiURL1 = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=ff101de3d4d514d1df9ef8df578576ab&units=imperial";
 
 fetch(apiURL1)
     .then((response) => response.json())
@@ -18,7 +18,7 @@ fetch(apiURL1)
 
 
     function weatherSummary() {
-        const apiURL = "//api.openweathermap.org/data/2.5/forecast?id=5604473&appid=ff101de3d4d514d1df9ef8df578576ab&units=imperial";
+        const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=ff101de3d4d514d1df9ef8df578576ab&units=imperial";
         fetch(apiURL)
             .then(function (response) {
                 return response.json();
