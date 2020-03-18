@@ -22,10 +22,9 @@ function weatherSummary() {
     .then((response) => response.json())
     .then((jsObject) => {
         console.log(jsObject);
-
-        /*.then(function (response) {
+    .then(function (response) {
             return response.json();
-        })*/
+        })
     const forecast = jsObject.list;
 
     const currentDay = new Date().getDay();
