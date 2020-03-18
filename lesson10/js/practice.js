@@ -27,7 +27,7 @@ function weatherSummary() {
         /*.then(function (response) {
             return response.json();
         })*/
-        const forecast = jsObject.list;
+        const forecast = jsObject['list'];
         
             const currentDay = new Date().getDay();
             const weekday= [];
