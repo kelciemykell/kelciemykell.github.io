@@ -40,7 +40,6 @@ function weatherSummary() {
             weekday[6] = "Sat";
 
             let count = currentDay;
-            const forecast = jsObject.list;
             for (let i = 0; i < forecast.length; i++) {
                 if (forecast[i].dt_txt.includes("18:00:00")) {
                     if(count == 7){
