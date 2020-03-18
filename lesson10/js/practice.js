@@ -65,4 +65,6 @@ function weatherSummary() {
                     count++;
                 }
             }
+        }
         });
+    
