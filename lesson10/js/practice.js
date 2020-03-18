@@ -19,12 +19,15 @@ fetch(apiURL1)
 function weatherSummary() {
     const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=ff101de3d4d514d1df9ef8df578576ab&units=imperial";
     fetch(apiURL)
-    .then((response) => response.json())
-    .then((jsObject) => {
-        console.log(jsObject);
     .then(function (response) {
-            return response.json();
-        })
+        return response.json();
+    })
+    .then(function (jsObject) {
+       
+    /*.then((response) => response.json())
+    .then((jsObject) => {
+        console.log(jsObject);*/
+    
     const forecast = jsObject.list;
 
     const currentDay = new Date().getDay();
