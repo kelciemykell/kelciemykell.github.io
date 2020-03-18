@@ -15,10 +15,10 @@ fetch(apiURL1)
     });
 
 //-----------5 day
-
+/*const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=ff101de3d4d514d1df9ef8df578576ab&units=imperial";
+    
 
 function weatherSummary() {
-    const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=ff101de3d4d514d1df9ef8df578576ab&units=imperial";
     fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
@@ -27,7 +27,7 @@ function weatherSummary() {
 
         /*.then(function (response) {
             return response.json();
-        })*/
+        })
         const forecast = jsObject['list'];
         
             const currentDay = new Date().getDay();
@@ -67,5 +67,5 @@ function weatherSummary() {
                 }
             }
         }
-        });
+        });*/
     
