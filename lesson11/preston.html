@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title> Weather Genie </title>
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/small.css">
+    <link rel="stylesheet" type="text/css" href="css/medium.css">
+    <link rel="stylesheet" type="text/css" href="css/large.css">
+
+
+</head>
+
+<body>
+    <section id="popup" class="hide">
+        <p><b>SATURDAY:</b> Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </section>
+    <header>
+        <h1>Weather Genie</h1>
+        <img src="../lesson3/logo/icon.png" alt="logo image">
+        <p> Your ultimate weather source</p>
+    </header>
+    <nav>
+        <ul class="navigation responsive">
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
+            <li><a href="../lesson9/index.html">Home</a></li>
+            <li><a href="../lesson10/preston-10.html" class="active">Preston, ID</a></li>
+            <li><a href="#"> Soda Springs</a></li>
+            <li><a href="#"> Fish Haven</a></li>
+            <li><a href="../lesson8/stormcenter.html"> Storm Center</a></li>
+            <li><a href="../lesson7/gallery-7.html"> Gallery</a></li>
+        </ul>
+
+    </nav>
+    <main onload=weatherSummary();>
+        <h2>Preston Idaho</h2>
+        <div class="herodiv">
+            <figure class="hero">
+                <img src="images/cit230_image_franklinOriginal.jpeg" alt="hero pic"
+                    srcset="images/franklinsmall614x298.jpg 500w, images/franklinmedium1128x596.jpg 800w, images/franklinlarge2456x1192.jpg 1000w">
+            </figure>
+            <section class="herosec">
+                <h3> Weather Summary </h3>
+                <span class="row1">Currently: </span><span class="row1-1" id="valCurrent"></span><br>
+                <span class="row1">High: </span>
+                <div class="row1-1"><span id="valHigh"></span> &#8457;</div>
+                <span class="row1">Wind Chill: </span>
+                <div class="row1-1"><span id="windChill"></span> &#8457;</div>
+                <span class="row1">Humidity: </span>
+                <div class="row1-1"><span id="valHumid"></span>%</div>
+                <span class="row1">Wind Speed: </span>
+                <div class="row1-1"><span id="valWind"></span>mph</div>
+            </section>
+        </div>
+
+        <h3>5 Day Forecast </h3>
+        <div class="forecastDiv"></div>
+
+        <div class="articlediv">
+            <h3>Article</h3>
+            <h4> By Author</h4>
+            <section class="articleclass">
+                <img src="images/rainplaceholder.jpg" alt="placeholder"
+                    srcset="images/rainplaceholdersmall.jpg 500w, images/rainplaceholdermedium.jpg 800w, images/rainplaceholder.jpg 1000w">
+                <article>
+                    It has been an unsually rainy year here in Preston. We have gotten over 20 inches of rain so far,
+                    surpassing the 19 inch per year average.This extra rainfall is much needed after last years lack of
+                    rain. Preston only recieved 13 inches of rain in 2019, making it a very dry year. More rain is still
+                    expected to fall over the next several months. Farmers are concerned about the possible flooding of
+                    fields which could potentially ruin crops. They are hopeful that the rain will stop long enough for 
+                    the ground to dry out before starting up again. Only time will tell. 
+                </article>
+                
+
+            </section>
+        </div>
+        <div class="contactdiv">
+            <h3> Contact Information</h3>
+            <section class="contactclass">
+                <img src="images/map.jpg" alt="map" srcset="images/mapsmall.jpg 500w, images/map.jpg 800w">
+                <p>Weather Genie</p>
+                <p>&#9993;: hello@weathergenie.com</p>
+                <p>☏: 123-456-7890</p>
+                <p><a href="https://www.instagram.com" target="_blank">Intagram</a></p>
+                <p><a href="https://www.facebook.com" target="_blank">Facebook</a></p>
+                <p><a href="https://www.twitter.com" target="_blank">Twitter</a></p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        &copy;<span id="currentdate"></span>| Kelcie Russell | Arizona | <a href="https://www.byui.edu">BYU Idaho </a>|
+        <span id="todaysDate"></span>
+    </footer>
+    <script src="js/javascript.js"></script>
+    <script src="../js/currentdate.js"></script>
+    <script src="../lesson4/js/todaysDate.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/practice.js"></script>
+</body>
+
+</html>
