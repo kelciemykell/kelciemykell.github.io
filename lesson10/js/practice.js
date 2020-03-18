@@ -16,6 +16,7 @@ fetch(apiURL1)
 
 //-----------5 day
 
+
 function weatherSummary() {
     const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=ff101de3d4d514d1df9ef8df578576ab&units=imperial";
     fetch(apiURL)

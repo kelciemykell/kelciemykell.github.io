@@ -1,67 +1,60 @@
-//------------current weather data
-const apiURL1 = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=ff101de3d4d514d1df9ef8df578576ab&units=imperial";
 
+    var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+const apiURL1 = "//api.openweathermap.org/data/2.5/weather?id=5604473&appid=ff101de3d4d514d1df9ef8df578576ab&units=imperial";
 fetch(apiURL1)
     .then((response) => response.json())
     .then((jsObject) => {
         console.log(jsObject);
+        const currentWeather = jsObject;
+        let current = document.createElement('p');
+        let temperature = document.createElement('p');
+        let wind_speed = document.createElement('p');
+        let wind_chill = document.createElement('p');
+        let humidity = document.createElement('p');
 
-        const weatherAPI = jsObject;
 
-        document.getElementById('valCurrent').textContent = weatherAPI.weather[0].main;
-        document.getElementById('valHigh').textContent = weatherAPI.main.temp_max.toFixed(1);
-        document.getElementById('valHumid').textContent = weatherAPI.main.humidity;
-        document.getElementById('valWind').textContent = weatherAPI.wind.speed;
+        current.textContent = currentWeather.weather[0].main;
+        temperature.textContent = currentWeather.main.temp_max.toFixed(0) + "°F";
+        wind_speed.textContent = currentWeather.wind.speed + "mph";;
+        wind_chill.textContent = calculateWindChill(currentWeather.main.temp_max, currentWeather.wind.speed);
+        humidity.textContent = currentWeather.main.humidity + "°%";;
 
+        document.querySelector('section.herosec').appendChild(current);
+        document.querySelector('section.herosec').appendChild(temperature);
+        document.querySelector('section.herosec').appendChild(wind_chill);
+        document.querySelector('section.herosec').appendChild(wind_speed);
+        document.querySelector('section.herosec').appendChild(humidity);
     });
+    const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=ff101de3d4d514d1df9ef8df578576ab&units=imperial";
+fetch(apiURL)
+    .then((response) => response.json())
+    .then((jsObject) => {
+        console.log(jsObject);
+        var today = new Date();
+        const forecast = jsObject['list'];
+        var count = 0;
+        for (let i = 0; i < forecast.length; i++) {
+            var hour = new Date(forecast[i].dt_txt).getHours();
+            var day = new Date(forecreateElementcast[i].dt_txt).getDay();
+            if (hour == 18) {
+                let col = document.createElement('div');
+                col.setAttribute("class", "col");
+                let span = document.createElement('span');
+                span.setAttribute("class", "label");
+                let data = document.('span');
+                data.setAttribute("class", "data");
+                let img = document.createElement('img');
+                img.setAttribute('src', 'https://openweathermap.org/img/w/' + forecast[i].weather[0].icon + '.png');
+                img.setAttribute('alt', forecast[i].weather[0].description);
 
 
-
-    function weatherSummary() {
-        const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=ff101de3d4d514d1df9ef8df578576ab&units=imperial";
-        fetch(apiURL)
-            .then(function (response) {
-                return response.json();
-            })
-
-                const currentDay = new Date().getDay();
-                const weekday= [];
-                weekday[0] = "Sun";
-                weekday[1] = "Mon";
-                weekday[2] = "Tue";
-                weekday[3] = "Wed";
-                weekday[4] = "Thu";
-                weekday[5] = "Fri";
-                weekday[6] = "Sat";
-    
-                let count = currentDay;
-                const forecast = jsObject.list;
-                for (let i = 0; i < forecast.length; i++) {
-                    if (forecast[i].dt_txt.includes("18:00:00")) {
-                        if(count == 7){
-                            count = 0;
-                        }
-                        let h4 = document.createElement('h4');
-                        let div = document.createElement('div');
-                        let image = document.createElement('img');
-                        let p = document.createElement('p');
-    
-                        h4.textContent = weekday[count];
-                        div.appendChild(h4);
-    
-                        let icon = forecast[i].weather[0].icon;
-                        image.setAttribute('src', 'https://openweathermap.org/img/w/' + icon + '.png');
-                        image.setAttribute('alt', forecast[i].weather[0].description);
-                        div.appendChild(image);
-    
-                        p.textContent = forecast[i].main.temp.toFixed(0)+' F';
-                        div.appendChild(p);
-    
-                        document.querySelector('div.forecastDiv').appendChild(div);
-                        count++;
-                    }
-                }
-    
-            });
-    }
+                span.textContent = days[day];
+                data.textContent = forecast[i].main.temp.toFixed(0) + "°F";
+                col.appendChild(span);
+                col.appendChild(img);
+                col.appendChild(data);
+                document.querySelector('forecastDiv').appendChild(col);
+            }
+        }
+    });
     
