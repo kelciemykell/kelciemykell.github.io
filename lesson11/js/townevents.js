@@ -16,6 +16,8 @@ fetch(requestURL)
                     events.textContent = towns[i].events;
                     events.setAttribute('class', 'event');
                     card.appendChild(events);
+
+                    document.querySelector('div.evets').appendChild(card);
                 }
             }
         };
