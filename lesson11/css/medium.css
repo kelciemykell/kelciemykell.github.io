@@ -6,7 +6,7 @@
 	.contactclass{
         overflow: auto;
 	}
-	div.articlediv{
+	div.articlediv, div.contactdiv{
 		padding: 1em;
 	}
 
