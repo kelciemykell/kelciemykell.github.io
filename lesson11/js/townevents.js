@@ -15,6 +15,7 @@ fetch(requestURL)
 
                     events.textContent = towns[i].events;
                     events.setAttribute('class', 'event');
+                    let card = document.createElement('section');
                     card.appendChild(events);
 
                     document.querySelector('div.events').appendChild(card);
