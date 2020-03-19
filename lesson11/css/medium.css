@@ -1,6 +1,12 @@
 /* 35em is also 560px when basefont is 16px */
 @media only screen and (min-width: 35rem) {
 
+
+
+	.contactclass{
+        overflow: auto;
+    }
+
 /*------------------------5 day forecast------------------------------------------*/
 .forecastdiv{
     position: relative;

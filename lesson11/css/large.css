@@ -42,6 +42,10 @@
         padding: .6rem 1rem;
     }
 
+
+    .contactclass{
+        overflow: auto;
+    }
 /*-------------------forecast--------------------*/
 
     .forecastDiv{
