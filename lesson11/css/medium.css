@@ -5,7 +5,10 @@
 
 	.contactclass{
         overflow: auto;
-    }
+	}
+	div.articlediv{
+		padding: 1em;
+	}
 
 /*------------------------5 day forecast------------------------------------------*/
 .forecastdiv{
