@@ -17,7 +17,7 @@ fetch(requestURL)
                     events.setAttribute('class', 'event');
                     card.appendChild(events);
 
-                    document.querySelector('div.evets').appendChild(card);
+                    document.querySelector('div.events').appendChild(card);
                 }
             }
         };
