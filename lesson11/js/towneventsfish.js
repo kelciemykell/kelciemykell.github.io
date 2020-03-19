@@ -13,7 +13,7 @@ fetch(requestURL)
                 if (towns[i].name == "Fish Haven") {
                     let events = document.createElement('p');
 
-                    events.textContent = towns[i].events  + "<br>";
+                    events.textContent = towns[i].events  + br;
                     events.setAttribute('class', 'event');
                     let card = document.createElement('section');
                     card.appendChild(events);
