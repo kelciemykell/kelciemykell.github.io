@@ -20,4 +20,4 @@ fetch(requestURL)
                     document.querySelector('div.events').appendChild(card);
                 }
             }
-        };
+        });
