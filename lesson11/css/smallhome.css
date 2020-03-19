@@ -178,6 +178,7 @@ ul li {
 
 img.image {
     padding: 1em;
+    max-width: 532px;
 }
 
 
