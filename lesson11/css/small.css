@@ -127,6 +127,10 @@ nav ul li a {
     font-weight: 700;
 }
 
+footer a{
+    color: #000;
+}
+
 
 .responsive li {
     display: block;
