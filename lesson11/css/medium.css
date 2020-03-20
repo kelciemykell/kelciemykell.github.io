@@ -9,6 +9,9 @@
 	div.articlediv, div.contactdiv{
 		padding: 1em;
 	}
+	h3{
+		padding: .75em;
+	}
 
 /*------------------------5 day forecast------------------------------------------*/
 .forecastdiv{
