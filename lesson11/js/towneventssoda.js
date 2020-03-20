@@ -13,7 +13,7 @@ fetch(requestURL)
                 if (towns[i].name == "Soda Springs") {
                     let events = document.createElement('p');
 
-                    events.textContent = towns[i].events  + "<br>";
+                    p.innerHTML(events) = towns[i].events  + "<br>";
                     events.setAttribute('class', 'event');
                     let card = document.createElement('section');
                     card.appendChild(events);
