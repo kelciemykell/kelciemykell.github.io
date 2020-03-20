@@ -76,7 +76,10 @@
     margin-top: -35px;
 }
 .articleclass{
-    padding: 1em;
+    padding-bottom: 1em;
+    padding-top: none;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 /*---------------------------------------------------contact-------------------------------------------------------------------------------------*/
 
