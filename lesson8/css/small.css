@@ -120,6 +120,10 @@ nav ul li a {
     background-color: #fff;
     font-weight: 700;
 }
+
+.responsive li{
+    display: block;
+}
 h2{
     background-color: rgba(19, 196, 163, 1);
     border-radius: 10px;
