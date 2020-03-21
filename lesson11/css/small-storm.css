@@ -135,6 +135,10 @@ p{
     text-align: center;
     font-size: 2em;
 }
+footer a{
+    color: #000;
+    text-decoration: none;
+}
 
 /*-------------------------------------form-------------------------------------------*/
 form fieldset {

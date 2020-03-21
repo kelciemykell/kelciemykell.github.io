@@ -26,6 +26,10 @@ footer {
     margin: 1em auto;
     padding: .5rem;
 }
+footer a{
+    color: #000;
+    text-decoration: none;
+}
 
 header,
 nav,
