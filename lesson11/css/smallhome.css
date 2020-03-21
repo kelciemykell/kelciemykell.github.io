@@ -158,6 +158,7 @@ div {
 
 section {
     border: 1px solid black;
+    max-width: 300px;
 }
 
 h3 {
