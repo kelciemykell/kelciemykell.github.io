@@ -2,7 +2,7 @@
 @media only screen and (min-width: 35rem) {
 
     /*------------------------------------------------------------------*/
-    div section{
+    div section {
         grid-template-columns: 1fr 1fr;
         padding: 0;
         margin: .5rem;
@@ -16,10 +16,14 @@
     div section:nth-child(2) .col-2 {
         order: -1;
     }
+
     img.image {
         padding: 1em;
         max-width: 500px;
     }
 
+    .city section {
+        max-width: 500px;
+    }
 
 }
