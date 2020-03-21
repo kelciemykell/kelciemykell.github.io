@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Gallery Page </title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="description" content="Gallery Page">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/small-gallery.css">
+    <link rel="stylesheet" type="text/css" href="css/medium-gallery.css">
+    <link rel="stylesheet" type="text/css" href="css/large-gallery.css">
+    <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>Weather Genie</h1>
+        <img src="../lesson3/logo/icon.png" alt="logo image">
+        <p> Your ultimate weather source</p>
+    </header>
+    <nav>
+        <ul class="navigation responsive">
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
+            <li><a href="../lesson11/index.html">Home</a></li>
+            <li><a href="../lesson11/preston.html">Preston, ID</a></li>
+            <li><a href="../lesson11/sodasprings.html"> Soda Springs</a></li>
+            <li><a href="../lesson11/fishhaven.html"> Fish Haven</a></li>
+            <li><a href="../lesson11/stormcenter.html"> Storm Center</a></li>
+            <li><a href="../lesson11/gallery.html"  class="active"> Gallery</a></li>
+        </ul>
+    
+    </nav>
+    <main>
+        <h1>Weather Gallery</h1>
+        <section class="grid">
+
+            <div class="grid-1 shadow">
+            <img src="images/lightning_small.jpg" data-src="images/lightning_small.jpg" alt="lightning">
+                <p class="info">Lightning Storm</p>
+            </div>
+
+            <div class="grid-2 shadow">
+            <img src="images/rain2_small.jpg" data-src="images/rain2_small.jpg" alt="rain">
+                <p class="info">Rain</p>
+            </div>
+
+            <div class="grid-3 shadow">
+            <img src="images/rain_small.jpg" data-src="images/rain_small.jpg" alt="rain">
+                <p class="info">Rain</p>
+            </div>
+
+            <div class="grid-4 shadow">
+            <img src="images/snow_small.jpg" data-src="images/snow_small.jpg" alt="snow">
+                <p class="info">Snow</p>
+            </div>
+
+            <div class="grid-5 shadow">
+            <img src="images/sun_small.jpg" data-src="images/sun_small.jpg" alt="sun">
+                <p class="info">Sunshine</p>
+            </div>
+
+            <div class="grid-6 shadow">
+            <img src="images/sunclouds_small.jpg" data-src="images/sunclouds_small.jpg" alt="sunclouds">
+                <p class="info">Sun in the clouds</p>
+            </div> 
+
+            <div class="grid-7 shadow">
+            <img src="images/hurricane_small.jpg" data-src="images/hurricane_small.jpg" alt="hurricane">
+                <p class="info">Hurricane</p>
+            </div>
+
+            <div class="grid-8 shadow">
+            <img src="images/fog_small.jpg" data-src="images/fog_small.jpg" alt="fog">
+                <p class="info">Fog</p>
+            </div>
+
+            <div class="grid-9 shadow">
+            <img src="images/fall_small.jpg" data-src="images/fall_small.jpg" alt="fall">
+                <p class="info">Fall leaves</p>
+            </div>
+        </section>
+    </main>
+
+        <footer>
+            &copy;<span id="currentdate"></span>| Kelcie Russell | Arizona | <a href="https://www.byui.edu">BYU Idaho </a> | <a href="https://openweathermap.org/">Open Weather Map</a>|
+            <span id="todaysDate"></span>
+        </footer>
+        <script src="../js/currentdate.js"></script>
+        <script src="../lesson6/js/javascript.js"></script>
+        <script src="../lesson4/js/todaysDate.js"></script>
+        <script src="lazyload.js"></script>
+</body>
+
+</html>

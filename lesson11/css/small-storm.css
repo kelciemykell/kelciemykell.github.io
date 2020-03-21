@@ -1,0 +1,239 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*------------Main Page Elements (header, footer, nav, main)-----------------------------*/
+nav ul li.active {
+    color: #ccc;
+}
+
+.active {
+    background-color: rgba(19, 196, 163, 1);
+}
+
+header,
+h1,
+footer {
+    background-color: rgba(19, 196, 163, 1);
+    display: flex;
+    /*flex-flow: block;*/
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+header img {
+    float: right;
+}
+
+.motto {
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: -10px;
+    margin-left: -30px;
+    font-style: italic;
+    font-size: .75rem;
+}
+
+
+footer {
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1em;
+    margin: 1em auto;
+    padding: .5rem;
+}
+
+header,
+nav,
+main,
+footer {
+    margin: 1em auto;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+nav {
+    background-color: rgba(255, 175, 135, 1);
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+    border-top: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.navigation {
+
+    list-style: none;
+    padding: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    color: #000;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: #000;
+    background-color: #fff;
+    font-weight: 700;
+}
+
+.responsive li{
+    display: block;
+}
+h2{
+    background-color: rgba(19, 196, 163, 1);
+    border-radius: 10px;
+    padding: 1em;
+    text-align: center;
+    font-size: 2.5em;
+}
+p{
+    text-align: center;
+    font-size: 2em;
+}
+
+/*-------------------------------------form-------------------------------------------*/
+form fieldset {
+    margin: .5rem 0;
+    border: 1px solid  rgba(19, 196, 163, 1);
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color:  rgba(19, 196, 163, 1);
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+ form label.top{
+     display: block;
+     padding: .5em;
+     text-align: left;
+ }
+ form label.datepick{
+    display: block;
+    padding: 1em;
+    text-align: left; 
+ }
+ form label.stormtype{
+    display: block;
+    padding: 1em;
+    text-align: left; 
+ }
+ form label.stormregion{
+    display: block;
+    padding: 1em;
+    text-align: left; 
+ }
+ form label.danger{
+    display: block;
+    padding: 1em;
+    text-align: left; 
+ }
+ form label.dangerlabel, form label.storminfo, form label.stormtype, form label.flexly, form label.stormregion{
+    display: block;
+    padding: 1em;
+    justify-content: left;
+    text-align: left;
+ }
+
+.flexly {
+    display: flex;
+    align-items: center;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+#ratingvalue {
+    margin: 0 0 0 5px;
+}
+textarea{
+    height: 200px;
+    width: 300px;
+
+}
+.submitBtn{
+    padding: 1em;
+    background-color: rgba(19, 196, 163, 1);
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Storm Center </title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="description" content="storm center page with form">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/small-storm.css">
+    <link rel="stylesheet" type="text/css" href="css/medium-storm.css">
+    <link rel="stylesheet" type="text/css" href="css/large-storm.css">
+    <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>Weather Genie</h1>
+        <img src="../lesson3/logo/icon.png" alt="logo image">
+        <p> Your ultimate weather source</p>
+    </header>
+    <nav>
+        <ul class="navigation responsive">
+            <ul class="navigation responsive">
+                <li><a class="ham" href="#">&#9776; Menu</a></li>
+                <li><a href="../lesson11/index.html">Home</a></li>
+                <li><a href="../lesson11/preston.html">Preston, ID</a></li>
+                <li><a href="../lesson11/sodasprings.html"> Soda Springs</a></li>
+                <li><a href="..//lesson11/fishhaven.html"> Fish Haven</a></li>
+                <li><a href="../lesson11/stormcenter.html" class="active"> Storm Center</a></li>
+                <li><a href="../lesson11/gallery.html"> Gallery</a></li>
+        </ul>
+
+        
+    </nav>
+    <main>
+        <form method="GET" action="thankyou.html">
+            <!------------Main User Input----------->
+            <fieldset>
+                <legend class="maininfo">User Information</legend>
+                <label class="top">Full Name* <br><input type="text" name="fname" size="40" pattern="[A-Za-z].{5,}"
+                        required></label>
+                <label class="top">Email <br><input type="email" name="email" size="40"
+                        placeholder="someone@gmail.com"></label>
+                <label class="top">Phone* <br><input type="tel" name="phone" size="40" placeholder="1235551234"
+                        required></label>
+                <label class="top">Zip Code* <br><input type="number" name="zipcode" size="40"
+                        pattern="(\d{5}([\-]\d{4})?)" autocomplete="shipping postal-codep" required></label>
+            </fieldset>
+            <!----------------------Storm Info------------------------>
+            <!------------Date Picker----------->
+            <fieldset>
+                <legend class="storminfo" for="info">Storm Information</legend>
+                <label class="datepick" for="theDate">Storm Date:<br>
+                    <input type="date" name="theDate" size="40">
+                </label>
+
+                <!------------Storm Type(list)----------->
+
+                <label class="stormtype" for="type">Storm Type <br>
+                    <input name="type" size="40" list="typelist" placeholder="Storm Type">
+                    <datalist id="typelist">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+                </label>
+                <!------------Storm Rating----------->
+                <label class="flexly" for="rating">Storm Severity: &nbsp;&nbsp;&nbsp; <br>
+                    <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
+                        oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">5</span>
+                    <datalist id="tickmarks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                    </datalist>
+                </label>
+
+                <!------------Storm Region (list)----------->
+
+                <label class="stormregion" for="region">Storm Region <br>
+                    <select name="region" class="stormregion">
+                        <option disabled selected>Select Region</option>
+                        <option value="preston">Preston</option>
+                        <option value="fish haven">Fish Haven</option>
+                        <option value="soda springs">Soda Springs</option>
+                    </select>
+                </label>
+                <br>
+
+                <!------------User In Danger (radio)----------->
+
+                <label class="dangerlabel">User In Danger <em>(Choose one):</em><br>
+                    <label class="danger"><input type="radio" name="dangerlevel" value="yes">Yes</label>
+                    <label class="danger"><input type="radio" name="dangerlevel" value="maybe">Maybe</label>
+                    <label class="danger"><input type="radio" name="dangerlevel" value="no">No</label>
+                </label>
+
+                <!------------Comments (textarea)----------->
+
+                <label for="Additional Information">Additional Comments:
+                <br>
+                <textarea></textarea>
+                </label>
+            </fieldset>
+
+            <!------------Submit Button----------->
+            <br>
+            <input type="submit" value="Send Storm Information" class="submitBtn">
+        </form>
+
+    </main>
+
+    <footer>
+        &copy;<span id="currentdate"></span>| Kelcie Russell | Arizona | <a href="https://www.byui.edu">BYU Idaho </a>|
+        <span id="todaysDate"></span>
+    </footer>
+    <script src="../js/currentdate.js"></script>
+    <script src="../lesson6/js/javascript.js"></script>
+    <script src="../lesson4/js/todaysDate.js"></script>
+    <script src="js/ratingvalue.js"></script>
+
+</body>
+
+</html>
