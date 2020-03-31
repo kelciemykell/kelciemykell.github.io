@@ -46,4 +46,12 @@
     .contactclass{
         overflow: auto;
     }
+
+    .floatRight{
+        float: right;
+        max-width: 50%;
+    }
+    .floatLeft{
+        float: left;
+    }
 }
