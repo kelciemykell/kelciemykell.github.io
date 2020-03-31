@@ -139,8 +139,14 @@ footer a{
 .logohead{
     max-width: 150px;
 }
+
+
 h3{
     background-color:#FF9F1C;
     border-radius: 5px;
     color: #000;
+}
+
+.bannerimg{
+    max-width: 100%;
 }
