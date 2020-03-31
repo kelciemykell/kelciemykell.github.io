@@ -68,7 +68,7 @@ main li {
 }
 
 nav {
-    background-color: #CBF3FO;
+    background-color: #CBF3F0;
     text-align: center;
     display: block;
     justify-content: center;
@@ -137,7 +137,7 @@ footer a{
     display: block;
 }
 h3{
-    background-color:rgba(13, 92, 99, 1);
+    background-color:#FF9F1C;
     border-radius: 5px;
     color: #fff;
 }
