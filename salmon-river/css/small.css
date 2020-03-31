@@ -147,6 +147,7 @@ h3{
 
 .artclass{
     overflow: auto;
+    font-size: 1.25em;
 }
 .artclass p{
     padding: 1em;
