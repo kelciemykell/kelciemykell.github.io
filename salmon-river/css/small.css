@@ -143,3 +143,7 @@ h3{
 .bannerimg{
     max-width: 100%;
 }
+
+.artclass{
+    overflow: auto;
+}
