@@ -21,7 +21,7 @@ nav ul li.active {
 header,
 h1,
 footer {
-    background-color: rgba(19, 196, 163, 1);
+    background-color: #FFBF69;
     display: flex;
     /*flex-flow: block;*/
     justify-content: center;
@@ -68,7 +68,7 @@ main li {
 }
 
 nav {
-    background-color: rgba(255, 175, 135, 1);
+    background-color: #CBF3FO;
     text-align: center;
     display: block;
     justify-content: center;
