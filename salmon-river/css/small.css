@@ -39,7 +39,7 @@ footer {
     font-family: 'Nanum Gothic', sans-serif;
     font-size: 1em;
     margin: 1em auto;
-    padding: .5rem;
+    padding: 1rem;
 }
 
 header,
@@ -138,6 +138,7 @@ h3{
     background-color:#FF9F1C;
     border-radius: 5px;
     color: #000;
+    padding: 1em;
 }
 
 .bannerimg{
