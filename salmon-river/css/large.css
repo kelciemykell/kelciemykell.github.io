@@ -56,4 +56,8 @@
         float: left;
         max-height: 200px;
     }
+    .artclass p{
+        padding: .5em;
+    }
 }
+
