@@ -51,15 +51,15 @@
         float: right;
         max-width: 50%;
         max-height: 200px;
-        font-size: 1.5em;
     }
     .floatLeft{
         float: left;
         max-height: 200px;
-        font-size: 1.5em;
+        
     }
     .artclass p{
         padding: .5em;
+        font-size: 1.5em;
     }
 }
 
