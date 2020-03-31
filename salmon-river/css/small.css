@@ -27,23 +27,16 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 10px;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;;
 }
 header img{
     float: right;
-}
-.motto {
-    color: rgba(255, 255, 255, 0.6);
-    margin-top: -10px;
-    margin-left: -30px;
-    font-style: italic;
-    font-size: .75rem;
 }
 
 main,
 footer {
     text-align: center;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
     font-size: 1em;
     margin: 1em auto;
     padding: .5rem;
@@ -54,7 +47,7 @@ nav,
 main,
 footer {
     margin: 1em auto;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;;
 }
 main {
     text-align: center;
