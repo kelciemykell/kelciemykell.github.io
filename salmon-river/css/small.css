@@ -153,7 +153,10 @@ h3{
     padding: 1em;
     text-align: left;
 }
-
+.guides{
+    overflow: auto;
+}
 .guideimg{
     max-width: 200px;
+    float: left;
 }
