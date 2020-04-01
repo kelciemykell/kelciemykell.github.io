@@ -141,6 +141,7 @@ h3{
     padding: 1em;
 }
 
+/*-----------Home Page-------------*/
 .bannerimg{
     max-width: 100%;
 }
@@ -153,10 +154,20 @@ h3{
     padding: 1em;
     text-align: left;
 }
+
+/*-----------guides-------------*/
 .guides{
     overflow: auto;
 }
 .guideimg{
     max-width: 250px;
     float: left;
+    padding: .5em;
 }
+
+   /*-----------Adventures-------------*/
+
+
+    /*-----------contact-------------*/
+
+    /*-----------reservations-------------*/
