@@ -50,11 +50,13 @@
     .floatRight{
         float: right;
         max-width: 50%;
-        max-height: 200px;
+        max-height: 225px;
+        padding: .5em;
     }
     .floatLeft{
         float: left;
-        max-height: 200px;
+        max-height: 225px;
+        padding: .5em;
         
     }
     .artclass p{
