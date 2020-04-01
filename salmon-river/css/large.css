@@ -50,12 +50,12 @@
     .floatRight{
         float: right;
         max-width: 50%;
-        max-height: 225px;
+        max-height: 235px;
         padding: .5em;
     }
     .floatLeft{
         float: left;
-        max-height: 225px;
+        max-height: 235px;
         padding: .5em;
         
     }
