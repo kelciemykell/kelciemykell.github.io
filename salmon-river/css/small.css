@@ -141,6 +141,11 @@ h3{
     padding: 1em;
 }
 
+h4{
+    background-color: #2EC4B6;
+    color: #000;
+}
+
 /*-----------Home Page-------------*/
 .bannerimg{
     max-width: 100%;
@@ -163,6 +168,10 @@ h3{
     max-width: 250px;
     float: left;
     padding: .5em;
+}
+.guides p{
+    padding: 1em;
+    font-size: 1.25em;
 }
 
    /*-----------Adventures-------------*/
