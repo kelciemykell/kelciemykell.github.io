@@ -63,5 +63,8 @@
         padding: .5em;
         font-size: 1.25em;
     }
+    .guideimg{
+        float: left;
+    }
 }
 

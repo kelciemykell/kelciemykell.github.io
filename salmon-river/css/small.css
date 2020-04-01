@@ -153,3 +153,7 @@ h3{
     padding: 1em;
     text-align: left;
 }
+
+.guideimg{
+    max-width: 200px;
+}
