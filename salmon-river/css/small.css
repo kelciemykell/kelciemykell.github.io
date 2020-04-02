@@ -184,8 +184,12 @@ h4{
     /*-----------contact-------------*/
 
     /*-----------reservations-------------*/
-
-    /*-------------------------------------form-------------------------------------------*/
+.adventuresumm{
+    display: block;
+    text-align: left;
+    background-color: #CBF3FO;
+}
+    /*------------form-------------*/
 form fieldset {
     margin: .5rem 0;
     border: 1px solid  #2EC4B6;
