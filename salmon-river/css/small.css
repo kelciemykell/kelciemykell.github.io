@@ -187,7 +187,11 @@ h4{
 .adventuresumm{
     display: block;
     text-align: left;
-    background-color: #CBF3FO;
+    background-color: #CBF3F0;
+}
+
+.adventuresumm h4{
+    text-align: center;
 }
     /*------------form-------------*/
 form fieldset {
