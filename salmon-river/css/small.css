@@ -216,7 +216,7 @@ form legend {
     text-align: left; 
  }
 
- form label.adventureinfo, form label.flexly, form label.adventurechoice{
+ form label.adventureinfo, form label.flexly, form label.adventurechoice, form label.adventures{
     display: block;
     padding: 1em;
     justify-content: left;
