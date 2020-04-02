@@ -75,5 +75,12 @@
     /*-----------contact-------------*/
 
     /*-----------reservations-------------*/
+    form{
+        max-width: 32rem;
+        }
+        
+        form label.top{
+            padding .4rem 0;
+        }
 }
 

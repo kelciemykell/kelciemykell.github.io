@@ -33,6 +33,56 @@
 
     </nav>
     <main>
+
+
+        
+            <form method="GET" action="thankyou.html">
+                <!------------Main User Input----------->
+                <fieldset>
+                    <legend class="maininfo">User Information</legend>
+                    <label class="top">Full Name* <br><input type="text" name="fname" size="40" pattern="[A-Za-z].{5,}"
+                            required></label>
+                    <label class="top">Email <br><input type="email" name="email" size="40"
+                            placeholder="someone@gmail.com"></label>
+                    <label class="top">Phone* <br><input type="tel" name="phone" size="40" placeholder="1235551234"
+                            required></label>
+                    
+                </fieldset>
+                
+                <!------------Start Date Picker----------->
+                <fieldset>
+                    <legend class="storminfo" for="info">Adventure Information</legend>
+                    <label class="datepick" for="theDate">Arrival Date:<br>
+                        <input type="date" name="theDate" size="40">
+                    </label>
+    
+                    <!------------Adventure Selection (list)----------->
+    
+                    <label class="stormregion" for="region">Adventure Options <br>
+                        <select name="region" class="stormregion">
+                            <option disabled selected>Select your Adventure</option>
+                            <option value="preston">Package 1</option>
+                            <option value="fish haven">Package 2</option>
+                            <option value="soda springs">Package 3</option>
+                        </select>
+                    </label>
+                    <br>
+    
+                    <!------------Comments (textarea)----------->
+    
+                    <label for="Additional Information">Additional Comments/Questions:
+                    <br>
+                    <textarea></textarea>
+                    </label>
+                </fieldset>
+    
+                <!------------Submit Button----------->
+                <br>
+                <input type="submit" value="Reserve Your Adventure" class="submitBtn">
+            </form>
+    
+    
+    
     </main>
     <footer>
         &copy;<span id="currentdate"></span>| Salmon River Adventures | Riggins, ID
