@@ -71,7 +71,9 @@
 
     /*-----------Adventures-------------*/
 
-
+.adventureimages{
+    float: left;
+}
     /*-----------contact-------------*/
 
     /*-----------reservations-------------*/
