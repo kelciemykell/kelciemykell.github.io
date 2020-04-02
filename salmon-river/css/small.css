@@ -209,22 +209,14 @@ form legend {
     padding: 1em;
     text-align: left; 
  }
- form label.stormtype{
+ 
+ form label.adventures{
     display: block;
     padding: 1em;
     text-align: left; 
  }
- form label.stormregion{
-    display: block;
-    padding: 1em;
-    text-align: left; 
- }
- form label.danger{
-    display: block;
-    padding: 1em;
-    text-align: left; 
- }
- form label.dangerlabel, form label.storminfo, form label.stormtype, form label.flexly, form label.stormregion{
+
+ form label.adventureinfo, form label.flexly, form label.adventurechoice{
     display: block;
     padding: 1em;
     justify-content: left;
@@ -244,9 +236,6 @@ form label.top input:required:valid {
     border-left: green solid 6px;
 }
 
-#ratingvalue {
-    margin: 0 0 0 5px;
-}
 textarea{
     height: 200px;
     width: 300px;
@@ -254,7 +243,7 @@ textarea{
 }
 .submitBtn{
     padding: 1em;
-    background-color: rgba(19, 196, 163, 1);
+    background-color: #2EC4B6;
     border-radius: 10px;
     font-weight: bold;
 }
