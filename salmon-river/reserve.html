@@ -33,56 +33,92 @@
 
     </nav>
     <main>
+        <h3>Adventure Package Summaries</h3>
+        <div class="adventuresumm">
+            <h4>Package 1</h4>
+            <p><b>Description:</b> The ultimate white water rafting adventure! On this adventure, you will raft the most
+                exciting rapids the river has to offer! This package includes a raft and rafting supplies, one of our
+                experienced your guides to lead your group, tents and cots for sleeping, food, water and a once in a
+                lifetime adventure! </p>
+            <p><b>Length:</b> 5 days, 4 nights</p>
+            <p><b>Skill Level:</b> Advanced</p>
+            <p><b>Cost:</b> $800 per person (please contact us for large group rates)</p>
+        </div>
+        <div class="adventuresumm">
+            <h4>Package 2</h4>
+            <p><b>Description:</b> This On this adventure, you will see some of the most breathtaking sites that Salmon
+                River
+                has to offer, and have the chance to experience some of the rivers funnest rapids! This package includes
+                one
+                of our experienced your guides to lead your group, tents and cots for sleeping, food, water and a once
+                in a
+                lifetime adventure! </p>
+            <p><b>Length:</b> 4 days, 3 nights</p>
+            <p><b>Skill Level:</b> Intermediate or Adventerous Begginer</p>
+            <p><b>Cost:</b> $600 per person (please contact us for large group rates)</p>
+        </div>
+        <div class="adventuresumm">
+            <h4>Package 3</h4>
+            <p><b>Description:</b> Package 3 is our family package. On this adventure, you will see some of the
+                beautiful sites that Salmon river has to offer. You will spend a full day floating the river with one of our
+                experienced tour guides where you will experience some of the rivers more mild , family friendly rapids and 
+                beautiful sites. You will spend the other days kayaking, paddle boarding and spending time on
+                beautiful river banks. This package includes one of our experienced your guides to lead
+                your group, cabins with bunk beds at our main camp, use of our multiple family recreation areas that include
+                sand volleyball courts, horseshoes, corn hole and other fun activities, food, water and a once in a lifetime adventure! </p>
+            <p><b>Length:</b> 3 days, 2 nights</p>
+            <p><b>Skill Level:</b> Begginer</p>
+            <p><b>Cost:</b> $400 per person (please contact us for large group rates)</p>
+        </div>
 
 
-        
-            <form method="GET" action="thankyou.html">
-                <!------------Main User Input----------->
-                <fieldset>
-                    <legend class="maininfo">User Information</legend>
-                    <label class="top">Full Name* <br><input type="text" name="fname" size="40" pattern="[A-Za-z].{5,}"
-                            required></label>
-                    <label class="top">Email <br><input type="email" name="email" size="40"
-                            placeholder="someone@gmail.com"></label>
-                    <label class="top">Phone* <br><input type="tel" name="phone" size="40" placeholder="1235551234"
-                            required></label>
-                    
-                </fieldset>
-                
-                <!------------Start Date Picker----------->
-                <fieldset>
-                    <legend class="adventureinfo" for="info">Adventure Information</legend>
-                    <label class="datepick" for="theDate">Arrival Date:<br>
-                        <input type="date" name="theDate" size="40">
-                    </label>
-    
-                    <!------------Adventure Selection (list)----------->
-    
-                    <label class="adventurechoice" for="choice">Adventure Options <br>
-                        <select name="choice" class="adventures">
-                            <option disabled selected>Select your Adventure</option>
-                            <option value="preston">Package 1</option>
-                            <option value="fish haven">Package 2</option>
-                            <option value="soda springs">Package 3</option>
-                        </select>
-                    </label>
-                    <br>
-    
-                    <!------------Comments (textarea)----------->
-    
-                    <label for="Additional Information">Additional Comments/Questions:
+        <form method="GET" action="thankyou.html">
+            <!------------Main User Input----------->
+            <fieldset>
+                <legend class="maininfo">User Information</legend>
+                <label class="top">Full Name* <br><input type="text" name="fname" size="40" pattern="[A-Za-z].{5,}"
+                        required></label>
+                <label class="top">Email <br><input type="email" name="email" size="40"
+                        placeholder="someone@gmail.com"></label>
+                <label class="top">Phone* <br><input type="tel" name="phone" size="40" placeholder="1235551234"
+                        required></label>
+
+            </fieldset>
+
+            <!------------Start Date Picker----------->
+            <fieldset>
+                <legend class="adventureinfo" for="info">Adventure Information</legend>
+                <label class="datepick" for="theDate">Arrival Date:<br>
+                    <input type="date" name="theDate" size="40">
+                </label>
+
+                <!------------Adventure Selection (list)----------->
+
+                <label class="adventurechoice" for="choice">Adventure Options <br>
+                    <select name="choice" class="adventures">
+                        <option disabled selected>Select your Adventure</option>
+                        <option value="preston">Package 1</option>
+                        <option value="fish haven">Package 2</option>
+                        <option value="soda springs">Package 3</option>
+                    </select>
+                </label>
+                <br>
+
+                <!------------Comments (textarea)----------->
+
+                <label for="Additional Information">Additional Comments/Questions:
                     <br>
                     <textarea></textarea>
-                    </label>
-                </fieldset>
-    
-                <!------------Submit Button----------->
-                <br>
-                <input type="submit" value="Reserve Your Adventure" class="submitBtn">
-            </form>
-    
-    
-    
+                </label>
+            </fieldset>
+
+            <!------------Submit Button----------->
+            <br>
+            <input type="submit" value="Reserve Your Adventure" class="submitBtn">
+        </form>
+
+
+
     </main>
     <footer>
         &copy;<span id="currentdate"></span>| Salmon River Adventures | Riggins, ID
