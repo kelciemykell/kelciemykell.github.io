@@ -67,6 +67,8 @@
     /*-----------Guides-------------*/
     .guideimg{
         float: left;
+        overflow: auto;
+        max-width: 350px;
     }
 
     /*-----------Adventures-------------*/
