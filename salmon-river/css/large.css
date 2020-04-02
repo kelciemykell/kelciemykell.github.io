@@ -69,6 +69,7 @@
         float: left;
         overflow: auto;
         max-width: 350px;
+        padding: .5em;
     }
 
     /*-----------Adventures-------------*/
