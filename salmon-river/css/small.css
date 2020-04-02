@@ -199,6 +199,11 @@ form legend {
     padding: 0 .5rem;
 }
 
+ form label.top{
+     display: block;
+     padding: .5em;
+     text-align: left;
+ }
  form label.datepick{
     display: block;
     padding: 1em;
