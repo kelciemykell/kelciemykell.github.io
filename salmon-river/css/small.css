@@ -190,6 +190,9 @@ h4{
     margin: 1em;
 }
 
+.adventuresumm img{
+    max-width: 100%;
+}
     /*-----------contact-------------*/
 .contactpage{
     align-content: center;
