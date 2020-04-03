@@ -204,6 +204,7 @@ table{
     font-family: Ubuntu, sans-serif;
     box-shadow: 10px 10px 10px #628ca6;
     align-content: center;
+    margin: 1em;
     
 }
 table, th, td{
