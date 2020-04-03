@@ -222,7 +222,7 @@ th, td {
     padding: .5em;
 }
 table tr:nth-child(2){
-    background-color: #FFBF69;
+    background-color: #CBF3F0;
     color: black; 
 }
 table tr:nth-child(4){
@@ -235,7 +235,7 @@ table tr:nth-child(3){
 }
 
 thead{
-    background-color: #FF9F1C;
+    background-color: #FFBF69;
     color: black; 
     font-size: 1.5em;
     font-weight: bold;
