@@ -196,6 +196,60 @@ h4{
 .adventuresumm h4{
     text-align: center;
 }
+/*------Table---------*/
+table{
+    justify-content: center;
+    font-family: Ubuntu, sans-serif;
+    box-shadow: 10px 10px 10px #628ca6;
+    
+}
+table, th, td{
+    border: 1px solid #ccc;
+}
+th, td {
+    text-align: center;
+    padding: 1em;
+}
+table tr:nth-child(2){
+    background-color: #e7f0ed;
+    color: black; 
+}
+table tr:nth-child(4){
+    background-color: #e7f0ed; 
+    color: black; 
+}
+table tr:nth-child(6){
+    background-color: #e7f0ed;
+    color: black;  
+}
+table tr:nth-child(3){
+    background-color: #e7ffed;
+    color: black; 
+}
+table tr:nth-child(5){
+    background-color: #e7ffed;
+    color: black; 
+}table tr:nth-child(7){
+    background-color: #e7ffed;
+    color: black; 
+}
+thead{
+    background-color: #7fb9c2;
+    color: black; 
+    font-size: 1.5em;
+    font-weight: bold;
+}
+tfoot{
+    background-color: #7fb9c2;
+    color: black; 
+}
+
+
+.selected{
+    background-color: #628ca6;
+    color: #fff;
+}
+
     /*------------form-------------*/
 form fieldset {
     margin: .5rem 0;
