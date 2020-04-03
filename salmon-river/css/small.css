@@ -201,6 +201,7 @@ table{
     justify-content: center;
     font-family: Ubuntu, sans-serif;
     box-shadow: 10px 10px 10px #628ca6;
+    align-content: center;
     
 }
 table, th, td{
@@ -214,7 +215,22 @@ table tr:nth-child(2){
     background-color: #e7f0ed;
     color: black; 
 }
+table tr:nth-child(4){
+    background-color: #e7f0ed; 
+    color: black; 
+}
+table tr:nth-child(6){
+    background-color: #e7f0ed;
+    color: black;  
+}
 table tr:nth-child(3){
+    background-color: #e7ffed;
+    color: black; 
+}
+table tr:nth-child(5){
+    background-color: #e7ffed;
+    color: black; 
+}table tr:nth-child(7){
     background-color: #e7ffed;
     color: black; 
 }
