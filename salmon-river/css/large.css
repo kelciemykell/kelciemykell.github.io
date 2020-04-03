@@ -88,6 +88,8 @@
     form {
         max-width: 32rem;
     }
-
+    th, td {
+        padding: 1em;
+    }
 
 }
