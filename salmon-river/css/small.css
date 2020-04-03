@@ -182,7 +182,9 @@ h4{
 
 
     /*-----------contact-------------*/
-
+.contactpage{
+    align-content: center;
+}
     /*-----------reservations-------------*/
 .adventuresumm{
     display: block;
