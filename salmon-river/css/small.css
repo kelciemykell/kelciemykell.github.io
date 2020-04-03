@@ -211,27 +211,27 @@ table{
     
 }
 table, th, td{
-    border: 1px solid #ccc;
+    border: 1px solid #2EC4B6;
 }
 th, td {
     text-align: center;
-    padding: 1em;
+    padding: .5em;
 }
 table tr:nth-child(2){
-    background-color: #e7f0ed;
+    background-color: #CBF3F0;
     color: black; 
 }
 table tr:nth-child(4){
-    background-color: #e7f0ed; 
+    background-color: #FFBF69; 
     color: black; 
 }
 table tr:nth-child(3){
-    background-color: #e7ffed;
+    background-color: #CBF3F0;
     color: black; 
 }
 
 thead{
-    background-color: #7fb9c2;
+    background-color: #FF9F1C;
     color: black; 
     font-size: 1.5em;
     font-weight: bold;
