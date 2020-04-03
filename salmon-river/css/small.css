@@ -181,21 +181,21 @@ h4{
 }
 
    /*-----------Adventures-------------*/
-
+   .adventuresumm{
+    display: block;
+    text-align: left;
+    background-color: #CBF3F0;
+    padding: 1em;
+    border: 1px solid #FFBF69;
+    margin: 1em;
+}
 
     /*-----------contact-------------*/
 .contactpage{
     align-content: center;
 }
     /*-----------reservations-------------*/
-.adventuresumm{
-    display: block;
-    text-align: left;
-    background-color: #CBF3F0;
-    padding: 1em;
-    border: 1px solid #FFBF69;
-    margin: 1em;%;
-}
+
 
 .mainreserve{
     justify-content: center;
@@ -213,7 +213,7 @@ table{
     margin-bottom: 1em;
     margin-top: 1em;
     margin-right: 1em;
-    margin-left: -1em;
+    margin-left: -5px;
     max-width: 100%;
     
 }
