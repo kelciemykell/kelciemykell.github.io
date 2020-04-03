@@ -42,48 +42,51 @@
         padding: .6rem 1rem;
     }
 
-/*-----------Home Page-------------*/
-    .contactclass{
+    /*-----------Home Page-------------*/
+    .contactclass {
         overflow: auto;
     }
 
-    .floatRight{
+    .floatRight {
         float: right;
         max-width: 50%;
         max-height: 235px;
         padding: .5em;
     }
-    .floatLeft{
+
+    .floatLeft {
         float: left;
         max-height: 235px;
         padding: .5em;
-        
+
     }
-    .artclass p{
+
+    .artclass p {
         padding: .5em;
         font-size: 1.25em;
     }
 
     /*-----------Guides-------------*/
-    .guideimg{
+    .guideimg {
+        float: left;
+
+    }
+
+    /*-----------Adventures-------------*/
+
+    .adventureimages {
         float: left;
         overflow: auto;
         max-width: 350px;
         padding: .5em;
     }
 
-    /*-----------Adventures-------------*/
-
-.adventureimages{
-    float: left;
-}
     /*-----------contact-------------*/
 
     /*-----------reservations-------------*/
-    form{
+    form {
         max-width: 32rem;
-        }
-        
-    
-}
+    }
 
+
+}
