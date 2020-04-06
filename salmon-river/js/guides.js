@@ -1,4 +1,4 @@
-const apiURL= "https://kelciemykell.github.io/salmon-river/guides.json";
+const apiURL= "kelciemykell.github.io/salmon-river/guides.json";
 fetch(apiURL)
   .then(function (response) {
     return response.json();
