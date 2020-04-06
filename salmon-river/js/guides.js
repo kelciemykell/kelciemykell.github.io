@@ -1,14 +1,29 @@
-const apiURL= "guides.json";
-fetch(apiURL1)
-    .then((response) => response.json())
-    .then((jsObject) => {
-        console.log(jsObject);
+const apiURL= "https://kelciemykell.github.io/salmon-river/guides.json";
+fetch(apiURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    const guides = jsonObject['guides'];
+    console.table(jsonObject); // temporary checking for valid response and data parsing
+    
+    for (let i = 0; i < guides.length; i++) {
+      
+      let card = document.createElement('section');
+      let h2 = document.createElement('h2');
+      let info = document.createElement('info');
+      let image = document.createElement('img');
+      
+      h2.textContent = guides[i].name;
+      card.appendChild(h2);
+      document.querySelector('div.cards').appendChild(card);
 
-        const weatherAPI = jsObject;
+      info.textContent = 'info';
+      card.appendChild(info);
 
-        document.getElementById('name').textContent = guides[0];
-        document.getElementById('valHigh').textContent = weatherAPI.main.temp_max.toFixed(1);
-        document.getElementById('valHumid').textContent = weatherAPI.main.humidity;
-        document.getElementById('valWind').textContent = weatherAPI.wind.speed;
+      image.setAttribute('src', guides[i].imageurl);
+      card.appendChild(image);
 
-    });
+    }
+
+  });
