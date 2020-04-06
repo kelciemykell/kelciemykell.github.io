@@ -18,7 +18,7 @@ fetch(apiURL)
       card.appendChild(h2);
       document.querySelector('div.cards').appendChild(card);
 
-      info.textContent = 'info';
+      info.textContent = guides[i].info;
       card.appendChild(info);
 
       image.setAttribute('src', guides[i].imageurl);
