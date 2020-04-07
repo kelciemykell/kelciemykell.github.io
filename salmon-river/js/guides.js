@@ -7,7 +7,7 @@ fetch(apiURL)
   const guides = jsonObject['guides'];
   console.table(jsonObject); // temporary checking for valid response and data parsing
 
-  for (let i = 0; i < guides.length; i++) {
+  /*for (let i = 0; i < guides.length; i++) {
 
     let card = document.createElement('section');
     let h2 = document.createElement('h2');
@@ -24,6 +24,6 @@ fetch(apiURL)
     image.setAttribute('src', guides[i].imageurl);
     card.appendChild(image);
 
-  }
+  }*/
 
 });
