@@ -3,7 +3,7 @@ fetch(apiURL)
   .then(function (response) {
     return response.json();
   })
-  .then(function (jsonObject) {
+  then(function (jsonObject) {
     const guides = jsonObject['guides'];
     console.table(jsonObject); // temporary checking for valid response and data parsing
     
